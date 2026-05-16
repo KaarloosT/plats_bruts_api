@@ -1,4 +1,20 @@
 {
-  "count": 0,
-  "results": []
+  "count": 3,
+  "results": [
+    {
+      "id": "c001",
+      "text": "T'estimo molt!",
+      "url": "/api/v1/cites/c001.json"
+    },
+    {
+      "id": "c002",
+      "text": "Pesa, Pol, pesa!",
+      "url": "/api/v1/cites/c002.json"
+    },
+    {
+      "id": "c003",
+      "text": "Tinc pis!",
+      "url": "/api/v1/cites/c003.json"
+    }
+  ]
 }

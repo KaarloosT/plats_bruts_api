@@ -2,8 +2,11 @@
   "slug": "david-guell-i-sobirana",
   "nom": "David Güell i Sobirana",
   "nom_complet": null,
-  "descripcio": null,
-  "actor": null,
+  "descripcio": "Interpretat per Joel Joan . Li costa molt lligar perquè s'enrotlla molt i les noies no l'aguanten. En teoria estudia les carreres de Dret i Econòmiques , però no hi assisteix mai perquè realment vol ser actor i estudia a l' Institut del Teatre . El problema és que el seu pare no ho tolera i ell decideix emancipar-se, això si, amb l'assistenta de tota la vida, la Carbonell, que li fa tota la feina de casa. Tot i que s'emancipa, continua rebent una paga de 150.000 ptes al mes dels seus pares, segons ell simbòlica perquè no són suficients per cobrir totes les seves despeses. Paradoxalment, tot i el seu origen burgès, té idees força anarquistes i liberals , fet pel qual li cau tan bé el pare del Lopes, l'Oriol. És especialista a mostrar-se tal com no és, ja que és fàcilment influenciable i depèn de les opinions que tenen els altres d'ell. Com a curiositat, té terror a l'aigua i no sap nedar, de manera que la Carbonell li falsificava la firma de la seva mare per evitar assistir a les classes de natació quan era petit i ara encara l'ha d'ajudar a banyar per no quedar-se sol a la dutxa.",
+  "actor": {
+    "slug": "joel-joan",
+    "nom": "Joel Joan"
+  },
   "temporades": [],
   "primera_aparicio": null,
   "imatge": null,

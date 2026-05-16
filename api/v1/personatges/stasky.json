@@ -2,8 +2,11 @@
   "slug": "stasky",
   "nom": "Stasky",
   "nom_complet": null,
-  "descripcio": null,
-  "actor": null,
+  "descripcio": "Interpretat per Borja Espinosa , és el cambrer que substitueix el Pol a partir de la cinquena temporada. És un noi jove, modern i força avar . Té moltes idees per renovar el bar i els seus serveis per tal de guanyar més diners i ser millor cambrer que el Pol. No queda clar si la seva mare li va posar aquest nom en honor de la sèrie de televisió estatunidenca Starsky & Hutch .",
+  "actor": {
+    "slug": "borja-espinosa",
+    "nom": "Borja Espinosa"
+  },
   "temporades": [],
   "primera_aparicio": null,
   "imatge": null,

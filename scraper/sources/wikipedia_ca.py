@@ -45,14 +45,50 @@ class WikipediaCaFetcher:
 
 PERSONATGE_SKIP = {"Principals", "Secundaris", "Altres", "Artistes_convidats"}
 
+# Regex to extract the actor name from "Interpretat per..." / "Interpretada per..."
+# Matches patterns like:
+#   "Interpretat per Jordi Sànchez"
+#   "Interpretada per la Lloll Bertran"
+#   "Interpretat per en Joel Joan,"
+# Note: "Interpretat" (masc.) vs "Interpretada" (fem.) — the suffix varies.
+_ACTOR_RE = re.compile(
+    r"Interpretat(?:da|a)?\s+per\s+(?:la\s+|el\s+|en\s+)?([A-ZÀ-Ÿ][^,.;\n]+?)(?:\s*[,.;]|\s*$)",
+    re.IGNORECASE,
+)
+
+# Regex to strip Wikipedia citation markers like [1], [2], [nb 1], etc.
+_CITE_RE = re.compile(r"\[\s*(?:\w+\s*)?\d+\s*\]")
+
+# Regex to strip "[modifica]" / "[ modifica ]" / "[editar]" edit links
+_EDIT_LINK_RE = re.compile(r"\[\s*(?:modifica|editar)\s*\]", re.IGNORECASE)
+
+
+def _clean_prose(text: str, max_chars: int = 1500) -> str:
+    """Strip citation markers and edit-link artefacts from Wikipedia prose, then trim."""
+    text = _CITE_RE.sub("", text)
+    text = _EDIT_LINK_RE.sub("", text)
+    # Collapse internal whitespace and newlines
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:max_chars]
+
 
 def parse_personatges(html: str, source_url: str) -> list[Personatge]:
     """Extract characters from the 'Llista de personatges' article.
 
     Characters are identified by <h3> elements whose id is NOT in the skip-list.
-    The heading text (with any '[modifica]' edit links stripped) is used as the nom.
-    Actor information is not extracted (too embedded in prose); callers can supply
-    it via data/overrides.json.
+    For each character the parser walks forward through the DOM siblings until it
+    hits the next <h2> or <h3>, accumulating <p> text as the description.
+
+    From that accumulated prose:
+    - ``descripcio``: cleaned prose (citation markers and edit links stripped,
+      whitespace collapsed, capped at 1500 chars).  The leading "Interpretat
+      per X" sentence is kept inside descripcio — it duplicates the actor field
+      slightly but preserves the natural opening of each character's biography.
+    - ``actor``: extracted via a regex on the prose.  Both ``nom`` and ``slug``
+      are derived from the captured name string.
+
+    ``nom_complet`` is left as None because the h3 text is already used as
+    ``nom``; the field exists for overrides to fill in when needed.
     """
     soup = BeautifulSoup(html, "lxml")
     personatges: list[Personatge] = []
@@ -80,9 +116,51 @@ def parse_personatges(html: str, source_url: str) -> list[Personatge]:
         if not nom:
             continue
 
+        # Walk siblings after this h3 (or its parent wrapper div if Wikipedia
+        # rendered the h3 inside a <div>) collecting <p> text until the next
+        # block-level heading.
+        # Modern Wikipedia wraps <h3> + its edit-section span inside a <div>;
+        # the following <p> paragraphs are siblings of that wrapping <div>, not
+        # of the <h3> itself.  We detect this by checking whether the h3's
+        # parent is a <div> that is not the mw-parser-output container itself.
+        walk_from = h3
+        if h3.parent and h3.parent.name == "div" and "mw-parser-output" not in (h3.parent.get("class") or []):
+            walk_from = h3.parent
+
+        prose_parts: list[str] = []
+        for sibling in walk_from.next_siblings:
+            tag_name = getattr(sibling, "name", None)
+            if tag_name in ("h2", "h3", "div"):
+                # Stop at the next heading or heading-wrapper div.
+                # We peek inside divs to see if they contain an h2/h3.
+                if tag_name == "div":
+                    inner = sibling.find(["h2", "h3"])
+                    if inner:
+                        break
+                    # Otherwise it might be a content div — fall through to collect p inside
+                    for p in sibling.find_all("p", recursive=False):
+                        prose_parts.append(p.get_text(separator=" ", strip=True))
+                else:
+                    break
+            elif tag_name == "p":
+                prose_parts.append(sibling.get_text(separator=" ", strip=True))
+
+        raw_prose = " ".join(prose_parts)
+        descripcio = _clean_prose(raw_prose) if raw_prose.strip() else None
+
+        # Extract actor from prose
+        actor: Optional[Actor] = None
+        if raw_prose:
+            m = _ACTOR_RE.search(raw_prose)
+            if m:
+                actor_nom = m.group(1).strip()
+                actor = Actor(slug=slugify(actor_nom), nom=actor_nom)
+
         personatges.append(Personatge(
             slug=slugify(nom),
             nom=nom,
+            descripcio=descripcio,
+            actor=actor,
             font_wikipedia=source_url,
         ))
 
@@ -145,9 +223,10 @@ def parse_episodis_i_temporades(html: str, source_url: str) -> tuple[list[Episod
             continue
 
         tbody = table.find("tbody") or table
-        rows = tbody.find_all("tr")
+        rows = list(tbody.find_all("tr"))
         season_episodis: list[Episodi] = []
-        for row in rows[1:]:  # skip header row
+        for idx in range(1, len(rows)):  # skip header row at index 0
+            row = rows[idx]
             cells = row.find_all(["td", "th"])
             if len(cells) < 3:
                 continue
@@ -161,10 +240,21 @@ def parse_episodis_i_temporades(html: str, source_url: str) -> tuple[list[Episod
             data_str = cells[5].get_text(strip=True) if len(cells) > 5 else ""
             iso_date = _parse_catalan_date(data_str)
 
+            # Check if the NEXT row is a synopsis row:
+            # a synopsis row has exactly one <td> with a colspan attribute.
+            sinopsi: Optional[str] = None
+            next_idx = idx + 1
+            if next_idx < len(rows):
+                next_cells = rows[next_idx].find_all(["td", "th"])
+                if len(next_cells) == 1 and next_cells[0].get("colspan"):
+                    raw_sinopsi = next_cells[0].get_text(separator=" ", strip=True)
+                    sinopsi = _clean_prose(raw_sinopsi) if raw_sinopsi.strip() else None
+
             season_episodis.append(Episodi(
                 temporada=numero,
                 numero=num,
                 titol=titol,
+                sinopsi=sinopsi,
                 data_emissio=iso_date,
                 font_wikipedia=source_url,
             ))

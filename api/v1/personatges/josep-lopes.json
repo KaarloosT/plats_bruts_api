@@ -2,8 +2,11 @@
   "slug": "josep-lopes",
   "nom": "Josep Lopes",
   "nom_complet": null,
-  "descripcio": null,
-  "actor": null,
+  "descripcio": "Interpretat per Jordi Sànchez , tothom el coneix com a «Lopes», té 35 anys. És un home d'estatura mitjana, una mica calb, no gaire agraciat físicament i molt catalanista . Ha fracassat en tot el que ha fet en la seva vida, és de mitjana edat i encara no ha triomfat ni en l'amor ni en el món laboral, més aviat tot el contrari. Això li ha comportat tenir un caràcter molt depressiu , generalment ensopit, trist i pessimista, s'ofega en un got d'aigua i s'atabala fàcilment. Té una personalitat molt dèbil, no sap dir mentides i no s'atreveix a fer res il·legal, fins al punt que és capaç d'entregar-se voluntàriament a la Policia si creu que ha comès alguna malifeta encara que potser no és ni delicte. El seu pare és l'Oriol Lopes, que el va concebre en una platja amb una «guiri» alemanya anomenada Marlene, de la qual no se'n sap res més durant la sèrie. Degut a l'excentricitat i a la filosofia de vida del seu pare, va rebre una educació molt especial i no va gaudir gaire de la seva infància. Actualment treballa de locutor de ràdio a Ràdio Bofarull, una emissora local que no escolta gairebé ningú. Depèn d'un contracte «escombraria» amb el qual no es pot permetre cap caprici, de manera que sovint ha de demanar crèdits a diferents bancs per poder sobreviure, aproximadament en té sis o set demanats. De jove havia estat monitor de lleure i en una ocasió va coincidir amb el David en unes colònies que van acabar de forma traumàtica. Manté una relació amorosa de més de dotze anys amb la Lídi",
+  "actor": {
+    "slug": "jordi-sanchez",
+    "nom": "Jordi Sànchez"
+  },
   "temporades": [],
   "primera_aparicio": null,
   "imatge": null,

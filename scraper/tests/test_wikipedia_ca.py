@@ -66,12 +66,25 @@ def test_parse_personatges_extracts_rows(plats_bruts_html):
     lopes = personatges[0]
     assert lopes.slug == "josep-lopes"
     assert lopes.nom == "Josep Lopes"
-    assert lopes.actor is None
     assert lopes.font_wikipedia == PERSONATGES_URL
+
+    # descripcio should be extracted from the prose paragraph
+    assert lopes.descripcio is not None
+    assert len(lopes.descripcio) > 0
+    assert "Eixample" in lopes.descripcio  # confirms prose was captured
+
+    # actor should be extracted from "Interpretat per en Jordi Sànchez"
+    assert lopes.actor is not None
+    assert lopes.actor.nom == "Jordi Sànchez"
+    assert lopes.actor.slug == "jordi-sanchez"
 
     david = personatges[1]
     assert david.nom == "David Güell i Sobirana"
     assert david.font_wikipedia == PERSONATGES_URL
+    # David's prose has no "Interpretat per" line, so actor stays None
+    assert david.actor is None
+    # But descripcio should still be extracted from the paragraph
+    assert david.descripcio is not None
 
     pol = personatges[2]
     assert pol.nom == "Pol Requena"
@@ -100,10 +113,22 @@ def test_parse_episodis_extracts_per_season(llista_episodis_html):
     assert episodis[0].id == "1x01"
     assert episodis[0].titol == "Tinc pis"
     assert episodis[0].data_emissio == "1999-04-19"
+
+    # sinopsi should be extracted from the colspan row that follows the episode row
+    assert episodis[0].sinopsi is not None
+    assert "Lopes" in episodis[0].sinopsi
+    assert "90.000 pessetes" in episodis[0].sinopsi
+    # citation markers should be stripped
+    assert "[1]" not in episodis[0].sinopsi
+
     assert episodis[1].id == "1x02"
     assert episodis[1].titol == "Tinc por"
+    # 1x02 has no synopsis row in the fixture
+    assert episodis[1].sinopsi is None
+
     assert episodis[2].id == "2x01"
     assert episodis[2].titol == "Tinc mama"
+    assert episodis[2].sinopsi is None
 
 
 def test_parse_temporades_groups_episodis(llista_episodis_html):

@@ -1,5 +1,60 @@
 {
   "personatges": {},
-  "cites": [],
-  "localitzacions": []
+  "cites": [
+    {
+      "id": "c001",
+      "text": "T'estimo molt!",
+      "personatge": "josep-lopes",
+      "episodi": null
+    },
+    {
+      "id": "c002",
+      "text": "Pesa, Pol, pesa!",
+      "personatge": "david-guell-i-sobirana",
+      "episodi": null
+    },
+    {
+      "id": "c003",
+      "text": "Tinc pis!",
+      "personatge": "josep-lopes",
+      "episodi": "1x01"
+    }
+  ],
+  "localitzacions": [
+    {
+      "slug": "el-pis",
+      "nom": "El pis",
+      "descripcio": "L'apartament de l'Eixample de Barcelona on viuen el Lopes i el David. Llogat al primer episodi per 90.000 pessetes. La caseta de fusta de l'Emma està al terrat del mateix edifici.",
+      "episodis": [],
+      "imatge": null
+    },
+    {
+      "slug": "cafe-maurici",
+      "nom": "Cafè Maurici",
+      "descripcio": "El bar del barri on treballa el Pol (i més tard l'Stasky) com a cambrer. Punt de trobada habitual dels personatges.",
+      "episodis": [],
+      "imatge": null
+    },
+    {
+      "slug": "radio-bofarull",
+      "nom": "Ràdio Bofarull",
+      "descripcio": "L'emissora de ràdio on el Lopes és locutor i el Ramon és tècnic de so. Dirigida per la Mercedes.",
+      "episodis": [],
+      "imatge": null
+    },
+    {
+      "slug": "institut-del-teatre",
+      "nom": "Institut del Teatre",
+      "descripcio": "On estudia teatre el David, i on va conèixer el Pol. Justificació recurrent de moltes de les escenes del David.",
+      "episodis": [],
+      "imatge": null
+    },
+    {
+      "slug": "caseta-de-fusta",
+      "nom": "Caseta de fusta del terrat",
+      "descripcio": "Una habitació de fusta al terrat sobre el pis del Lopes i el David, on viu l'Emma. No té llum, aigua ni gas — l'Emma utilitza els serveis del pis dels nois.",
+      "episodis": [],
+      "imatge": null
+    }
+  ]
 }

@@ -2,8 +2,11 @@
   "slug": "ramon-zamora",
   "nom": "Ramon Zamora",
   "nom_complet": null,
-  "descripcio": null,
-  "actor": null,
+  "descripcio": "Interpretat per Lluís Xavier Villanueva , és un home de mitjana edat, company del López a Ràdio Bofarull, treballa de tècnic de so des dels catorze anys. És un home clàssic, sobretot en l'estil de vestir, té la mentalitat força tancada, és força curt i ingenu però molt bromista. Al principi és una mica homòfob però quan coneix el Pol, aquest li cau molt bé i després ja no té prejudicis, però li fa bromes contínuament sobre la seva sexualitat. Com a curiositat és karateka cinturó negre i segons expliquen, està molt ben dotat sexualment. Acaba la sèrie amb un sol ronyó per haver donat l'altre a la Mercedes, després que aquesta l'enganyés. Té molt bona relació amb la iaia del David, i sovint la visita per xerrar, prendre te i menjar pastetes .",
+  "actor": {
+    "slug": "lluis-xavier-villanueva",
+    "nom": "Lluís Xavier Villanueva"
+  },
   "temporades": [],
   "primera_aparicio": null,
   "imatge": null,

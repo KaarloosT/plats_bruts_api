@@ -1,4 +1,30 @@
 {
-  "count": 0,
-  "results": []
+  "count": 5,
+  "results": [
+    {
+      "slug": "el-pis",
+      "nom": "El pis",
+      "url": "/api/v1/localitzacions/el-pis.json"
+    },
+    {
+      "slug": "cafe-maurici",
+      "nom": "Cafè Maurici",
+      "url": "/api/v1/localitzacions/cafe-maurici.json"
+    },
+    {
+      "slug": "radio-bofarull",
+      "nom": "Ràdio Bofarull",
+      "url": "/api/v1/localitzacions/radio-bofarull.json"
+    },
+    {
+      "slug": "institut-del-teatre",
+      "nom": "Institut del Teatre",
+      "url": "/api/v1/localitzacions/institut-del-teatre.json"
+    },
+    {
+      "slug": "caseta-de-fusta",
+      "nom": "Caseta de fusta del terrat",
+      "url": "/api/v1/localitzacions/caseta-de-fusta.json"
+    }
+  ]
 }

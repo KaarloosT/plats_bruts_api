@@ -2,8 +2,11 @@
   "slug": "pol-requena",
   "nom": "Pol Requena",
   "nom_complet": null,
-  "descripcio": null,
-  "actor": null,
+  "descripcio": "Interpretat per Pau Durà , és un noi de 24 anys, originari d' Alcoi , que estudia a l'Institut del Teatre amb el David i treballa com a cambrer al Cafè Maurici. És poca cosa físicament, baixet i força sec. Pel que fa al caràcter, és molt bon noi i sensible però amb personalitat i bastant intel·lectual, de vegades escriu poesia . És gai i segons ell li ve de família, ja que la seva iaia ja era lesbiana . A més, és tresorer de la Coordinadora Gai-Lesbiana del seu barri Abandona la sèrie poc abans de finalitzar la quarta temporada en un episodi on es parodia la vida real de l'actor que aconsegueix un paper en la sèrie de televisió « 7 vidas ».",
+  "actor": {
+    "slug": "pau-dura",
+    "nom": "Pau Durà"
+  },
   "temporades": [],
   "primera_aparicio": null,
   "imatge": null,
