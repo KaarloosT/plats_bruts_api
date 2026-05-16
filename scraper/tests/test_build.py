@@ -21,8 +21,11 @@ def test_build_end_to_end(tmp_path, plats_bruts_html, llista_episodis_html):
             return plats_bruts_html
         return ""
 
-    with patch("scraper.build.WikipediaCaFetcher") as MockFetcher:
+    with patch("scraper.build.WikipediaCaFetcher") as MockFetcher, \
+         patch("scraper.build.WikiquoteCaFetcher") as MockWQ:
         MockFetcher.return_value.fetch.side_effect = fake_fetch
+        # Make the WQ fetcher return empty HTML so no quotes are scraped in the test
+        MockWQ.return_value.fetch.return_value = "<html><body></body></html>"
         build(repo_root=repo_root)
 
     base = repo_root / "api" / "v1"
