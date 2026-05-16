@@ -89,16 +89,6 @@ def parse_personatges(html: str, source_url: str) -> list[Personatge]:
     return personatges
 
 
-def _parse_temporades_range(text: str) -> list[int]:
-    """Parses '1-3' -> [1,2,3], '1, 3' -> [1,3], '2' -> [2]."""
-    text = text.strip()
-    match = re.fullmatch(r"(\d+)\s*-\s*(\d+)", text)
-    if match:
-        start, end = int(match.group(1)), int(match.group(2))
-        return list(range(start, end + 1))
-    return [int(n.strip()) for n in text.split(",") if n.strip().isdigit()]
-
-
 CATALAN_MONTHS = {
     "gener": 1, "febrer": 2, "març": 3, "abril": 4, "maig": 5, "juny": 6,
     "juliol": 7, "agost": 8, "setembre": 9, "octubre": 10, "novembre": 11, "desembre": 12,
@@ -167,7 +157,7 @@ def parse_episodis_i_temporades(html: str, source_url: str) -> tuple[list[Episod
             # Wikipedia's "Episodi" column is a cumulative global counter.
             # We want per-season numbering, so derive it from position.
             num = len(season_episodis) + 1
-            titol = cells[2].get_text(strip=True)
+            titol = cells[2].get_text(separator=" ", strip=True)
             data_str = cells[5].get_text(strip=True) if len(cells) > 5 else ""
             iso_date = _parse_catalan_date(data_str)
 

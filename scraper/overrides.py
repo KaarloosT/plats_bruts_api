@@ -2,7 +2,7 @@ import json
 from dataclasses import dataclass, field, replace
 from pathlib import Path
 
-from scraper.models import Cita, Localitzacio, Personatge
+from scraper.models import Actor, Cita, Localitzacio, Personatge
 
 
 @dataclass
@@ -19,6 +19,8 @@ class Overrides:
                 out.append(p)
                 continue
             valid_fields = {k: v for k, v in patch.items() if k in p.__dataclass_fields__}
+            if isinstance(valid_fields.get("actor"), dict):
+                valid_fields["actor"] = Actor(**valid_fields["actor"])
             out.append(replace(p, **valid_fields))
         return out
 
