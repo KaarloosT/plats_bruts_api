@@ -114,4 +114,7 @@ Tot viu sota `/api/v1/`. Si en el futur cal trencar compatibilitat es publicarà
 
 ## Llicència
 
-Codi sota MIT. Dades sota CC BY-SA 4.0 (heretat de Viquipèdia) — cada fitxa inclou un camp `font_wikipedia` amb la URL d'origen.
+Dual:
+
+- **Codi** (tot el contingut de `scraper/`, configuració, HTML de documentació) → [MIT](LICENSE). Pots fer-lo servir lliurement per a qualsevol propòsit, també comercial.
+- **Dades** (tots els fitxers JSON sota `api/v1/`) → [CC BY-SA 4.0](LICENSE-DATA). Heretat de Viquipèdia. Si reutilitzes les dades has d'atribuir la font (cada fitxa porta un camp `font_wikipedia`) i compartir els derivats amb la mateixa llicència.

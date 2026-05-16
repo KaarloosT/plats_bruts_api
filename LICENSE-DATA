@@ -1,0 +1,40 @@
+Data License — Creative Commons Attribution-ShareAlike 4.0 International
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+The data published by this project under the `api/v1/` directory (and
+served from <https://kaarloost.github.io/plats_bruts_api/api/v1/>) is a
+derivative work of articles from the Catalan Wikipedia, primarily:
+
+  - https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts
+  - https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts
+
+Each JSON document includes a `font_wikipedia` field with the URL of the
+source article.
+
+Because the source material is licensed under Creative Commons Attribution-
+ShareAlike 4.0 International, this derivative data is published under the
+same license. By using the data you agree to:
+
+  1. ATTRIBUTION — Credit the Catalan Wikipedia as the source. The
+     `font_wikipedia` field in each record gives the canonical URL.
+
+  2. SHARE-ALIKE — If you remix, transform, or build upon this data, you
+     must distribute your contributions under the same license (CC BY-SA
+     4.0) or a compatible one.
+
+  3. NO ADDITIONAL RESTRICTIONS — You may not apply legal terms or
+     technological measures that legally restrict others from doing
+     anything the license permits.
+
+Full license text:
+  https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Human-readable summary:
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+---
+
+NOTE: This file covers ONLY the data (the JSON files under `api/v1/`).
+The source code of the scraper, the build configuration, and the
+documentation HTML are licensed separately under the MIT License — see
+the `LICENSE` file.
