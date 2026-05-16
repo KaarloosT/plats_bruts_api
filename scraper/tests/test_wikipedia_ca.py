@@ -77,3 +77,40 @@ def test_parse_personatges_handles_accented_names(plats_bruts_html):
     assert emili.slug == "emli"  # interpunct stripped by slugify
     assert emili.actor.nom == "Jordi Sànchez"
     assert emili.actor.slug == "jordi-sanchez"
+
+
+from scraper.sources.wikipedia_ca import parse_episodis_i_temporades
+
+
+def test_parse_episodis_extracts_per_season(llista_episodis_html):
+    episodis, temporades = parse_episodis_i_temporades(
+        llista_episodis_html,
+        source_url="https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts",
+    )
+
+    assert len(episodis) == 3
+    assert episodis[0].id == "1x01"
+    assert episodis[0].titol == "Pilot"
+    assert episodis[0].data_emissio == "1999-04-12"
+    assert episodis[1].id == "1x02"
+    assert episodis[2].id == "2x01"
+    assert episodis[2].titol == "Tornada"
+
+
+def test_parse_temporades_groups_episodis(llista_episodis_html):
+    _, temporades = parse_episodis_i_temporades(
+        llista_episodis_html,
+        source_url="https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts",
+    )
+    assert len(temporades) == 2
+    t1 = temporades[0]
+    assert t1.numero == 1
+    assert t1.num_episodis == 2
+    assert t1.episodis == ["1x01", "1x02"]
+    assert t1.any_inici == 1999
+    assert t1.any_fi == 1999
+
+    t2 = temporades[1]
+    assert t2.numero == 2
+    assert t2.episodis == ["2x01"]
+    assert t2.any_inici == 2000
