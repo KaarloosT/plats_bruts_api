@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Plats Bruts" width="260">
+</p>
+
 # Plats Bruts API
 
 > API REST estàtica amb dades sobre la sitcom catalana **Plats Bruts** (TV3, 1999-2002), inspirada en [PokéAPI](https://pokeapi.co/). Hostatjada gratuïtament a GitHub Pages, sense autenticació i sense límits.
@@ -114,7 +118,8 @@ Tot viu sota `/api/v1/`. Si en el futur cal trencar compatibilitat es publicarà
 
 ## Llicència
 
-Dual:
+Triple (cada part en la seva):
 
 - **Codi** (tot el contingut de `scraper/`, configuració, HTML de documentació) → [MIT](LICENSE). Pots fer-lo servir lliurement per a qualsevol propòsit, també comercial.
 - **Dades** (tots els fitxers JSON sota `api/v1/`) → [CC BY-SA 4.0](LICENSE-DATA). Heretat de Viquipèdia. Si reutilitzes les dades has d'atribuir la font (cada fitxa porta un camp `font_wikipedia`) i compartir els derivats amb la mateixa llicència.
+- **Material gràfic** (logotip i derivats sota `assets/`) → propietat de **TV3 / El Terrat**. Detalls a [NOTICE](NOTICE). Aquí s'usa amb propòsit identificatiu, no comercial, anàlogament a com Viquipèdia mostra el mateix logotip a l'article de la sèrie.

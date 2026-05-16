@@ -5,6 +5,10 @@
   <title>Plats Bruts API — guia d'ús</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="API REST estàtica sobre la sitcom Plats Bruts (TV3, 1999-2002). Sense auth, sense límits.">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <meta property="og:image" content="assets/social_preview.png">
+  <meta property="og:title" content="Plats Bruts API">
+  <meta property="og:description" content="API REST estàtica sobre la sitcom Plats Bruts (TV3, 1999-2002).">
   <style>
     :root { --accent: #c41e3a; --bg: #fafafa; --code-bg: #f1f1f1; --border: #e2e2e2; --muted: #666; }
     * { box-sizing: border-box; }
@@ -37,8 +41,9 @@
 <body>
 
 <header>
-  <h1>Plats Bruts API</h1>
-  <p class="tagline">API REST estàtica sobre la sitcom catalana <strong>Plats Bruts</strong> (TV3, 1999-2002). Sense autenticació, sense rate limits.</p>
+  <img src="assets/logo.png" alt="Plats Bruts" style="display:block;margin:0 auto 1rem;max-width:260px;height:auto;">
+  <h1 style="text-align:center;">Plats Bruts API</h1>
+  <p class="tagline" style="text-align:center;">API REST estàtica sobre la sitcom catalana <strong>Plats Bruts</strong> (TV3, 1999-2002). Sense autenticació, sense rate limits.</p>
 </header>
 
 <p>Inspirada en <a href="https://pokeapi.co/">PokéAPI</a>, exposa les dades de la sèrie com a fitxers JSON estàtics servits per GitHub Pages. Qualsevol pot consumir-la des d'un navegador, una app mòbil o un script — només cal fer <code>fetch</code>.</p>

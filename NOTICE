@@ -1,0 +1,27 @@
+Trademarks and Copyrighted Visual Material
+==========================================
+
+This repository contains visual assets derived from the Catalan television
+series "Plats Bruts", which is a registered trademark and copyrighted work.
+
+  - Series:     "Plats Bruts" (TV3, 1999-2002)
+  - Broadcaster: Televisió de Catalunya (TV3), part of the Corporació
+                 Catalana de Mitjans Audiovisuals (CCMA).
+  - Producer:    El Terrat
+  - Copyright:   © TV3 / El Terrat. All rights reserved.
+
+The image files under `assets/` (logo.png, social_preview.png, favicon.ico)
+are derivative works of the official series logo. They are used here in a
+non-commercial, fan-driven context for the purpose of identifying the
+series this API describes — analogous to how Wikipedia uses the same logo
+on its article about the series.
+
+The visual material is NOT licensed under the project's MIT or CC BY-SA
+licenses. The rights remain with TV3 / El Terrat. If a representative of
+TV3, the CCMA, or El Terrat objects to this usage, the assets will be
+removed promptly. Contact the repository maintainer via GitHub issues.
+
+This is a fan project with NO affiliation, endorsement, or commercial
+relationship with TV3, the CCMA, or El Terrat. The API itself ships only
+plain-text data derived from Wikipedia under CC BY-SA 4.0 (see
+LICENSE-DATA); no copyrighted video or audio content is included.
