@@ -53,7 +53,8 @@ def parse_personatges(html: str, source_url: str) -> list[Personatge]:
         return []
 
     personatges: list[Personatge] = []
-    rows = table.find("tbody").find_all("tr")
+    tbody = table.find("tbody") or table
+    rows = tbody.find_all("tr")
     for row in rows[1:]:  # skip header row
         cells = row.find_all(["td", "th"])
         if len(cells) < 3:
