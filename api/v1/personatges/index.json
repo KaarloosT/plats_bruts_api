@@ -1,0 +1,50 @@
+{
+  "count": 9,
+  "results": [
+    {
+      "slug": "josep-lopes",
+      "nom": "Josep Lopes",
+      "url": "/api/v1/personatges/josep-lopes.json"
+    },
+    {
+      "slug": "david-guell-i-sobirana",
+      "nom": "David Güell i Sobirana",
+      "url": "/api/v1/personatges/david-guell-i-sobirana.json"
+    },
+    {
+      "slug": "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+      "nom": "Emma Cruscat de Palausabullabellobach i Gonzàlez",
+      "url": "/api/v1/personatges/emma-cruscat-de-palausabullabellobach-i-gonzalez.json"
+    },
+    {
+      "slug": "conxita-carbonell",
+      "nom": "Conxita Carbonell",
+      "url": "/api/v1/personatges/conxita-carbonell.json"
+    },
+    {
+      "slug": "pol-requena",
+      "nom": "Pol Requena",
+      "url": "/api/v1/personatges/pol-requena.json"
+    },
+    {
+      "slug": "maria-de-las-mercedes-de-simancas-i-murrieta",
+      "nom": "Maria de las Mercedes de Simancas i Murrieta",
+      "url": "/api/v1/personatges/maria-de-las-mercedes-de-simancas-i-murrieta.json"
+    },
+    {
+      "slug": "ramon-zamora",
+      "nom": "Ramon Zamora",
+      "url": "/api/v1/personatges/ramon-zamora.json"
+    },
+    {
+      "slug": "iaia-asunsion",
+      "nom": "Iaia Asunsión",
+      "url": "/api/v1/personatges/iaia-asunsion.json"
+    },
+    {
+      "slug": "stasky",
+      "nom": "Stasky",
+      "url": "/api/v1/personatges/stasky.json"
+    }
+  ]
+}

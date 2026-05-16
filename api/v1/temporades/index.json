@@ -1,0 +1,29 @@
+{
+  "count": 6,
+  "results": [
+    {
+      "numero": 1,
+      "url": "/api/v1/temporades/1.json"
+    },
+    {
+      "numero": 2,
+      "url": "/api/v1/temporades/2.json"
+    },
+    {
+      "numero": 3,
+      "url": "/api/v1/temporades/3.json"
+    },
+    {
+      "numero": 4,
+      "url": "/api/v1/temporades/4.json"
+    },
+    {
+      "numero": 5,
+      "url": "/api/v1/temporades/5.json"
+    },
+    {
+      "numero": 6,
+      "url": "/api/v1/temporades/6.json"
+    }
+  ]
+}
