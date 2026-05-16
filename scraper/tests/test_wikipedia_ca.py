@@ -56,51 +56,60 @@ def test_fetcher_throttles_between_live_requests(tmp_path):
 
 from scraper.sources.wikipedia_ca import parse_personatges
 
+PERSONATGES_URL = "https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts"
+
 
 def test_parse_personatges_extracts_rows(plats_bruts_html):
-    personatges = parse_personatges(plats_bruts_html, source_url="https://ca.wikipedia.org/wiki/Plats_bruts")
+    personatges = parse_personatges(plats_bruts_html, source_url=PERSONATGES_URL)
 
-    assert len(personatges) == 2
-    lofi = personatges[0]
-    assert lofi.slug == "lofi"
-    assert lofi.nom == "Lofi"
-    assert lofi.actor.slug == "joel-joan"
-    assert lofi.actor.nom == "Joel Joan"
-    assert lofi.temporades == [1, 2, 3]
-    assert lofi.font_wikipedia == "https://ca.wikipedia.org/wiki/Plats_bruts"
+    assert len(personatges) == 3
+    lopes = personatges[0]
+    assert lopes.slug == "josep-lopes"
+    assert lopes.nom == "Josep Lopes"
+    assert lopes.actor is None
+    assert lopes.font_wikipedia == PERSONATGES_URL
+
+    david = personatges[1]
+    assert david.nom == "David Güell i Sobirana"
+    assert david.font_wikipedia == PERSONATGES_URL
+
+    pol = personatges[2]
+    assert pol.nom == "Pol Requena"
+    assert pol.font_wikipedia == PERSONATGES_URL
 
 
 def test_parse_personatges_handles_accented_names(plats_bruts_html):
-    personatges = parse_personatges(plats_bruts_html, source_url="https://ca.wikipedia.org/wiki/Plats_bruts")
-    emili = personatges[1]
-    assert emili.nom == "Em·li"
-    assert emili.slug == "emli"  # interpunct stripped by slugify
-    assert emili.actor.nom == "Jordi Sànchez"
-    assert emili.actor.slug == "jordi-sanchez"
+    personatges = parse_personatges(plats_bruts_html, source_url=PERSONATGES_URL)
+    david = personatges[1]
+    assert david.nom == "David Güell i Sobirana"
+    assert david.slug == "david-guell-i-sobirana"  # accents stripped by slugify
 
 
 from scraper.sources.wikipedia_ca import parse_episodis_i_temporades
+
+EPISODIS_URL = "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 
 
 def test_parse_episodis_extracts_per_season(llista_episodis_html):
     episodis, temporades = parse_episodis_i_temporades(
         llista_episodis_html,
-        source_url="https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts",
+        source_url=EPISODIS_URL,
     )
 
     assert len(episodis) == 3
     assert episodis[0].id == "1x01"
-    assert episodis[0].titol == "Pilot"
-    assert episodis[0].data_emissio == "1999-04-12"
+    assert episodis[0].titol == "Tinc pis"
+    assert episodis[0].data_emissio == "1999-04-19"
     assert episodis[1].id == "1x02"
+    assert episodis[1].titol == "Tinc por"
     assert episodis[2].id == "2x01"
-    assert episodis[2].titol == "Tornada"
+    assert episodis[2].titol == "Tinc mama"
 
 
 def test_parse_temporades_groups_episodis(llista_episodis_html):
     _, temporades = parse_episodis_i_temporades(
         llista_episodis_html,
-        source_url="https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts",
+        source_url=EPISODIS_URL,
     )
     assert len(temporades) == 2
     t1 = temporades[0]
@@ -113,4 +122,4 @@ def test_parse_temporades_groups_episodis(llista_episodis_html):
     t2 = temporades[1]
     assert t2.numero == 2
     assert t2.episodis == ["2x01"]
-    assert t2.any_inici == 2000
+    assert t2.any_inici == 1999

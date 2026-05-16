@@ -9,26 +9,28 @@ def test_build_end_to_end(tmp_path, plats_bruts_html, llista_episodis_html):
     repo_root = tmp_path
     (repo_root / "data").mkdir()
     (repo_root / "data" / "overrides.json").write_text(json.dumps({
-        "personatges": {"lofi": {"descripcio": "Estudiant de filosofia."}},
-        "cites": [{"id": "c001", "text": "Que potes!", "personatge": "lofi", "episodi": "1x01"}],
+        "personatges": {"josep-lopes": {"descripcio": "El Lopes és un personatge principal."}},
+        "cites": [{"id": "c001", "text": "Que potes!", "personatge": "josep-lopes", "episodi": "1x01"}],
         "localitzacions": [{"slug": "pis", "nom": "El pis", "descripcio": "L'apartament."}]
     }), encoding="utf-8")
 
     def fake_fetch(url, cache_key):
-        if "Llista" in url:
+        if "Llista_d" in url and "episodis" in url:
             return llista_episodis_html
-        return plats_bruts_html
+        if "Llista_de_personatges" in url:
+            return plats_bruts_html
+        return ""
 
     with patch("scraper.build.WikipediaCaFetcher") as MockFetcher:
         MockFetcher.return_value.fetch.side_effect = fake_fetch
         build(repo_root=repo_root)
 
     base = repo_root / "api" / "v1"
-    lofi = json.loads((base / "personatges" / "lofi.json").read_text(encoding="utf-8"))
-    assert lofi["descripcio"] == "Estudiant de filosofia."
+    lopes = json.loads((base / "personatges" / "josep-lopes.json").read_text(encoding="utf-8"))
+    assert lopes["descripcio"] == "El Lopes és un personatge principal."
 
     ep = json.loads((base / "episodis" / "1x01.json").read_text(encoding="utf-8"))
-    assert ep["titol"] == "Pilot"
+    assert ep["titol"] == "Tinc pis"
 
     cita = json.loads((base / "cites" / "c001.json").read_text(encoding="utf-8"))
     assert cita["text"] == "Que potes!"

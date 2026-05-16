@@ -8,7 +8,7 @@ from scraper.sources.wikipedia_ca import (
     parse_personatges,
 )
 
-WIKI_SERIE_URL = "https://ca.wikipedia.org/wiki/Plats_bruts"
+WIKI_PERSONATGES_URL = "https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts"
 WIKI_EPISODIS_URL = "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 
 
@@ -17,10 +17,10 @@ def build(repo_root: Path) -> None:
     cache_dir = repo_root / "scraper" / ".cache"
 
     fetcher = WikipediaCaFetcher(cache_dir=cache_dir)
-    serie_html = fetcher.fetch(WIKI_SERIE_URL, cache_key="serie")
+    personatges_html = fetcher.fetch(WIKI_PERSONATGES_URL, cache_key="personatges")
     episodis_html = fetcher.fetch(WIKI_EPISODIS_URL, cache_key="episodis")
 
-    personatges = parse_personatges(serie_html, source_url=WIKI_SERIE_URL)
+    personatges = parse_personatges(personatges_html, source_url=WIKI_PERSONATGES_URL)
     episodis, temporades = parse_episodis_i_temporades(
         episodis_html, source_url=WIKI_EPISODIS_URL
     )

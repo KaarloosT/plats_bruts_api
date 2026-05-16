@@ -43,34 +43,49 @@ class WikipediaCaFetcher:
             time.sleep(remaining)
 
 
-def parse_personatges(html: str, source_url: str) -> list[Personatge]:
-    soup = BeautifulSoup(html, "lxml")
-    heading_span = soup.find("span", id="Personatges")
-    if heading_span is None:
-        return []
-    table = heading_span.find_parent().find_next("table", class_="wikitable")
-    if table is None:
-        return []
+PERSONATGE_SKIP = {"Principals", "Secundaris", "Altres", "Artistes_convidats"}
 
+
+def parse_personatges(html: str, source_url: str) -> list[Personatge]:
+    """Extract characters from the 'Llista de personatges' article.
+
+    Characters are identified by <h3> elements whose id is NOT in the skip-list.
+    The heading text (with any '[modifica]' edit links stripped) is used as the nom.
+    Actor information is not extracted (too embedded in prose); callers can supply
+    it via data/overrides.json.
+    """
+    soup = BeautifulSoup(html, "lxml")
     personatges: list[Personatge] = []
-    tbody = table.find("tbody") or table
-    rows = tbody.find_all("tr")
-    for row in rows[1:]:  # skip header row
-        cells = row.find_all(["td", "th"])
-        if len(cells) < 3:
+
+    for h3 in soup.find_all("h3"):
+        # The id may be on the h3 itself or on a child <span class="mw-headline">
+        h3_id = h3.get("id") or ""
+        if not h3_id:
+            span = h3.find("span", id=True)
+            h3_id = span["id"] if span else ""
+
+        if not h3_id or h3_id in PERSONATGE_SKIP:
             continue
 
-        nom = cells[0].get_text(strip=True)
-        actor_text = cells[1].get_text(strip=True)
-        temporades_text = cells[2].get_text(strip=True)
+        # Extract the display text; prefer the mw-headline span if present
+        headline_span = h3.find("span", class_="mw-headline")
+        if headline_span:
+            nom = headline_span.get_text(strip=True)
+        else:
+            # Fall back to full h3 text, stripping edit-section links
+            for edit_link in h3.find_all(class_="mw-editsection"):
+                edit_link.decompose()
+            nom = h3.get_text(strip=True)
+
+        if not nom:
+            continue
 
         personatges.append(Personatge(
             slug=slugify(nom),
             nom=nom,
-            actor=Actor(slug=slugify(actor_text), nom=actor_text),
-            temporades=_parse_temporades_range(temporades_text),
             font_wikipedia=source_url,
         ))
+
     return personatges
 
 
@@ -90,28 +105,68 @@ CATALAN_MONTHS = {
 }
 
 
+ORDINAL_TO_SEASON = {
+    "primera": 1, "segona": 2, "tercera": 3, "quarta": 4,
+    "cinquena": 5, "sisena": 6, "setena": 7, "vuitena": 8,
+}
+
+
 def parse_episodis_i_temporades(html: str, source_url: str) -> tuple[list[Episodi], list[Temporada]]:
+    """Parse episodes and seasons from the 'Llista d'episodis' article.
+
+    Seasons are identified by <h3 id="<ordinal>_temporada"> headings, where
+    <ordinal> is a Catalan ordinal word (primera, segona, …).  The FIRST wikitable
+    that follows each such heading is the episode list for that season.
+
+    Episode rows have 6 cells:
+        [0] episode number within season
+        [1] episode code (e.g. "1-01")
+        [2] title (possibly wrapped in <span><b>…</b></span>)
+        [3] director
+        [4] script author
+        [5] air date
+    """
     soup = BeautifulSoup(html, "lxml")
     episodis: list[Episodi] = []
     temporades: list[Temporada] = []
 
-    season_spans = soup.find_all("span", id=re.compile(r"^Temporada_\d+$"))
-    for span in season_spans:
-        numero = int(span["id"].split("_")[1])
-        table = span.find_parent().find_next("table", class_="wikitable")
+    for h3 in soup.find_all("h3"):
+        # The id may be directly on h3 or on a child element
+        h3_id = h3.get("id") or ""
+        if not h3_id:
+            id_el = h3.find(id=True)
+            h3_id = id_el["id"] if id_el else ""
+
+        if not h3_id:
+            continue
+
+        # Match "<ordinal>_temporada" (case-insensitive)
+        m = re.match(r"^([A-Za-z]+)_temporada$", h3_id, re.IGNORECASE)
+        if not m:
+            continue
+        ordinal = m.group(1).lower()
+        numero = ORDINAL_TO_SEASON.get(ordinal)
+        if numero is None:
+            continue
+
+        # Find the first wikitable after this heading
+        table = h3.find_next("table", class_="wikitable")
         if table is None:
             continue
 
         tbody = table.find("tbody") or table
         rows = tbody.find_all("tr")
         season_episodis: list[Episodi] = []
-        for row in rows[1:]:
+        for row in rows[1:]:  # skip header row
             cells = row.find_all(["td", "th"])
             if len(cells) < 3:
                 continue
-            num = int(cells[0].get_text(strip=True))
-            titol = cells[1].get_text(strip=True)
-            data_str = cells[2].get_text(strip=True)
+            num_text = cells[0].get_text(strip=True)
+            if not num_text.isdigit():
+                continue  # skip colspan separator rows
+            num = int(num_text)
+            titol = cells[2].get_text(strip=True)
+            data_str = cells[5].get_text(strip=True) if len(cells) > 5 else ""
             iso_date = _parse_catalan_date(data_str)
 
             season_episodis.append(Episodi(
@@ -136,8 +191,8 @@ def parse_episodis_i_temporades(html: str, source_url: str) -> tuple[list[Episod
 
 
 def _parse_catalan_date(text: str) -> str | None:
-    """Parses '12 d'abril de 1999' -> '1999-04-12'. Returns None on failure."""
-    match = re.search(r"(\d{1,2})\s+d[e']\s*(\w+)\s+de\s+(\d{4})", text, re.IGNORECASE)
+    """Parses '12 d'abril de 1999' or '10 de gener del 2000' -> '1999-04-12'. Returns None on failure."""
+    match = re.search(r"(\d{1,2})\s+d[e']\s*(\w+)\s+del?\s+(\d{4})", text, re.IGNORECASE)
     if not match:
         return None
     day, month_name, year = match.groups()
