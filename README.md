@@ -17,7 +17,7 @@
 
 | Recurs | Quantitat | Endpoint d'índex |
 |---|---:|---|
-| Personatges | 9 | `/personatges/index.json` |
+| Personatges | 27 | `/personatges/index.json` |
 | Episodis | 73 | `/episodis/index.json` |
 | Temporades | 6 | `/temporades/index.json` |
 | Cites | ~777 | `/cites/index.json` |
