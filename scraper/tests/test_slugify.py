@@ -5,7 +5,11 @@ def test_lowercase():
     assert slugify("Lofi") == "lofi"
 
 
-def test_removes_accents():
+def test_removes_accents_and_interpunct():
+    assert slugify("Em·li") == "emli"
+
+
+def test_strips_accented_letters():
     assert slugify("Emíli") == "emili"
 
 
