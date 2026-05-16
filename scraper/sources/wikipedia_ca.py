@@ -164,7 +164,9 @@ def parse_episodis_i_temporades(html: str, source_url: str) -> tuple[list[Episod
             num_text = cells[0].get_text(strip=True)
             if not num_text.isdigit():
                 continue  # skip colspan separator rows
-            num = int(num_text)
+            # Wikipedia's "Episodi" column is a cumulative global counter.
+            # We want per-season numbering, so derive it from position.
+            num = len(season_episodis) + 1
             titol = cells[2].get_text(strip=True)
             data_str = cells[5].get_text(strip=True) if len(cells) > 5 else ""
             iso_date = _parse_catalan_date(data_str)

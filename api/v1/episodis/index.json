@@ -67,304 +67,304 @@
       "url": "/api/v1/episodis/1x13.json"
     },
     {
-      "id": "2x14",
+      "id": "2x01",
       "titol": "Tinc parella",
+      "url": "/api/v1/episodis/2x01.json"
+    },
+    {
+      "id": "2x02",
+      "titol": "Tinc enyorances",
+      "url": "/api/v1/episodis/2x02.json"
+    },
+    {
+      "id": "2x03",
+      "titol": "Tenim un merder",
+      "url": "/api/v1/episodis/2x03.json"
+    },
+    {
+      "id": "2x04",
+      "titol": "Tinc hipoteca",
+      "url": "/api/v1/episodis/2x04.json"
+    },
+    {
+      "id": "2x05",
+      "titol": "Tinc un mal rotllo",
+      "url": "/api/v1/episodis/2x05.json"
+    },
+    {
+      "id": "2x06",
+      "titol": "Tinc poder",
+      "url": "/api/v1/episodis/2x06.json"
+    },
+    {
+      "id": "2x07",
+      "titol": "Tinc una idea",
+      "url": "/api/v1/episodis/2x07.json"
+    },
+    {
+      "id": "2x08",
+      "titol": "Tinc castanyes",
+      "url": "/api/v1/episodis/2x08.json"
+    },
+    {
+      "id": "2x09",
+      "titol": "Tinc futur",
+      "url": "/api/v1/episodis/2x09.json"
+    },
+    {
+      "id": "2x10",
+      "titol": "Tinc honor",
+      "url": "/api/v1/episodis/2x10.json"
+    },
+    {
+      "id": "2x11",
+      "titol": "Tinc un virus",
+      "url": "/api/v1/episodis/2x11.json"
+    },
+    {
+      "id": "2x12",
+      "titol": "Tinc pistes",
+      "url": "/api/v1/episodis/2x12.json"
+    },
+    {
+      "id": "2x13",
+      "titol": "Tinc un fletxasso",
+      "url": "/api/v1/episodis/2x13.json"
+    },
+    {
+      "id": "2x14",
+      "titol": "Tinc un berenar",
       "url": "/api/v1/episodis/2x14.json"
     },
     {
       "id": "2x15",
-      "titol": "Tinc enyorances",
+      "titol": "Tinc família",
       "url": "/api/v1/episodis/2x15.json"
     },
     {
       "id": "2x16",
-      "titol": "Tenim un merder",
+      "titol": "Tinc meta",
       "url": "/api/v1/episodis/2x16.json"
     },
     {
-      "id": "2x17",
-      "titol": "Tinc hipoteca",
-      "url": "/api/v1/episodis/2x17.json"
-    },
-    {
-      "id": "2x18",
-      "titol": "Tinc un mal rotllo",
-      "url": "/api/v1/episodis/2x18.json"
-    },
-    {
-      "id": "2x19",
-      "titol": "Tinc poder",
-      "url": "/api/v1/episodis/2x19.json"
-    },
-    {
-      "id": "2x20",
-      "titol": "Tinc una idea",
-      "url": "/api/v1/episodis/2x20.json"
-    },
-    {
-      "id": "2x21",
-      "titol": "Tinc castanyes",
-      "url": "/api/v1/episodis/2x21.json"
-    },
-    {
-      "id": "2x22",
-      "titol": "Tinc futur",
-      "url": "/api/v1/episodis/2x22.json"
-    },
-    {
-      "id": "2x23",
-      "titol": "Tinc honor",
-      "url": "/api/v1/episodis/2x23.json"
-    },
-    {
-      "id": "2x24",
-      "titol": "Tinc un virus",
-      "url": "/api/v1/episodis/2x24.json"
-    },
-    {
-      "id": "2x25",
-      "titol": "Tinc pistes",
-      "url": "/api/v1/episodis/2x25.json"
-    },
-    {
-      "id": "2x26",
-      "titol": "Tinc un fletxasso",
-      "url": "/api/v1/episodis/2x26.json"
-    },
-    {
-      "id": "2x27",
-      "titol": "Tinc un berenar",
-      "url": "/api/v1/episodis/2x27.json"
-    },
-    {
-      "id": "2x28",
-      "titol": "Tinc família",
-      "url": "/api/v1/episodis/2x28.json"
-    },
-    {
-      "id": "2x29",
-      "titol": "Tinc meta",
-      "url": "/api/v1/episodis/2x29.json"
-    },
-    {
-      "id": "3x30",
+      "id": "3x01",
       "titol": "No tinc assistenta",
-      "url": "/api/v1/episodis/3x30.json"
+      "url": "/api/v1/episodis/3x01.json"
     },
     {
-      "id": "3x31",
+      "id": "3x02",
       "titol": "Tinc clarianes",
-      "url": "/api/v1/episodis/3x31.json"
+      "url": "/api/v1/episodis/3x02.json"
     },
     {
-      "id": "3x32",
+      "id": "3x03",
       "titol": "Tinc defensa",
-      "url": "/api/v1/episodis/3x32.json"
+      "url": "/api/v1/episodis/3x03.json"
     },
     {
-      "id": "3x33",
+      "id": "3x04",
       "titol": "Tinc nació",
-      "url": "/api/v1/episodis/3x33.json"
+      "url": "/api/v1/episodis/3x04.json"
     },
     {
-      "id": "3x34",
+      "id": "3x05",
       "titol": "Tinc un pla",
-      "url": "/api/v1/episodis/3x34.json"
+      "url": "/api/v1/episodis/3x05.json"
     },
     {
-      "id": "3x35",
+      "id": "3x06",
       "titol": "Tinc espelma",
-      "url": "/api/v1/episodis/3x35.json"
+      "url": "/api/v1/episodis/3x06.json"
     },
     {
-      "id": "3x36",
+      "id": "3x07",
       "titol": "Tinc nòvia",
-      "url": "/api/v1/episodis/3x36.json"
+      "url": "/api/v1/episodis/3x07.json"
     },
     {
-      "id": "3x37",
+      "id": "3x08",
       "titol": "Tinc un somni",
-      "url": "/api/v1/episodis/3x37.json"
+      "url": "/api/v1/episodis/3x08.json"
     },
     {
-      "id": "3x38",
+      "id": "3x09",
       "titol": "Tinc mala sort",
-      "url": "/api/v1/episodis/3x38.json"
+      "url": "/api/v1/episodis/3x09.json"
     },
     {
-      "id": "3x39",
+      "id": "3x10",
       "titol": "Tinc pànic",
-      "url": "/api/v1/episodis/3x39.json"
+      "url": "/api/v1/episodis/3x10.json"
     },
     {
-      "id": "4x40",
+      "id": "4x01",
       "titol": "Tinc contraccions",
-      "url": "/api/v1/episodis/4x40.json"
+      "url": "/api/v1/episodis/4x01.json"
     },
     {
-      "id": "4x41",
+      "id": "4x02",
       "titol": "Tinc baves",
-      "url": "/api/v1/episodis/4x41.json"
+      "url": "/api/v1/episodis/4x02.json"
     },
     {
-      "id": "4x42",
+      "id": "4x03",
       "titol": "Tinc temps",
-      "url": "/api/v1/episodis/4x42.json"
+      "url": "/api/v1/episodis/4x03.json"
     },
     {
-      "id": "4x43",
+      "id": "4x04",
       "titol": "Tinc bon cor",
-      "url": "/api/v1/episodis/4x43.json"
+      "url": "/api/v1/episodis/4x04.json"
     },
     {
-      "id": "4x44",
+      "id": "4x05",
       "titol": "Tinc mètode",
-      "url": "/api/v1/episodis/4x44.json"
+      "url": "/api/v1/episodis/4x05.json"
     },
     {
-      "id": "4x45",
+      "id": "4x06",
       "titol": "Tinc pipí",
-      "url": "/api/v1/episodis/4x45.json"
+      "url": "/api/v1/episodis/4x06.json"
     },
     {
-      "id": "4x46",
+      "id": "4x07",
       "titol": "Tinc hortet",
-      "url": "/api/v1/episodis/4x46.json"
+      "url": "/api/v1/episodis/4x07.json"
     },
     {
-      "id": "4x47",
+      "id": "4x08",
       "titol": "Tinc un dia normal",
-      "url": "/api/v1/episodis/4x47.json"
+      "url": "/api/v1/episodis/4x08.json"
     },
     {
-      "id": "5x48",
+      "id": "5x01",
       "titol": "Tinc iaia",
-      "url": "/api/v1/episodis/5x48.json"
+      "url": "/api/v1/episodis/5x01.json"
     },
     {
-      "id": "5x49",
+      "id": "5x02",
       "titol": "Tinc patató",
-      "url": "/api/v1/episodis/5x49.json"
+      "url": "/api/v1/episodis/5x02.json"
     },
     {
-      "id": "5x50",
+      "id": "5x03",
       "titol": "Tinc talent",
-      "url": "/api/v1/episodis/5x50.json"
+      "url": "/api/v1/episodis/5x03.json"
     },
     {
-      "id": "5x51",
+      "id": "5x04",
       "titol": "Tinc bolero",
-      "url": "/api/v1/episodis/5x51.json"
+      "url": "/api/v1/episodis/5x04.json"
     },
     {
-      "id": "5x52",
+      "id": "5x05",
       "titol": "Tinc alternativa",
-      "url": "/api/v1/episodis/5x52.json"
+      "url": "/api/v1/episodis/5x05.json"
     },
     {
-      "id": "5x53",
+      "id": "5x06",
       "titol": "Tinc ràbia",
-      "url": "/api/v1/episodis/5x53.json"
+      "url": "/api/v1/episodis/5x06.json"
     },
     {
-      "id": "5x54",
+      "id": "5x07",
       "titol": "Tinc molta cara",
-      "url": "/api/v1/episodis/5x54.json"
+      "url": "/api/v1/episodis/5x07.json"
     },
     {
-      "id": "5x55",
+      "id": "5x08",
       "titol": "Tinc escaiola",
-      "url": "/api/v1/episodis/5x55.json"
+      "url": "/api/v1/episodis/5x08.json"
     },
     {
-      "id": "5x56",
+      "id": "5x09",
       "titol": "Tinc classe",
-      "url": "/api/v1/episodis/5x56.json"
+      "url": "/api/v1/episodis/5x09.json"
     },
     {
-      "id": "5x57",
+      "id": "5x10",
       "titol": "Tinc una revelació",
-      "url": "/api/v1/episodis/5x57.json"
+      "url": "/api/v1/episodis/5x10.json"
     },
     {
-      "id": "5x58",
+      "id": "5x11",
       "titol": "Tinc dobles",
-      "url": "/api/v1/episodis/5x58.json"
+      "url": "/api/v1/episodis/5x11.json"
     },
     {
-      "id": "5x59",
+      "id": "5x12",
       "titol": "Tinc ritme",
-      "url": "/api/v1/episodis/5x59.json"
+      "url": "/api/v1/episodis/5x12.json"
     },
     {
-      "id": "6x60",
+      "id": "6x01",
       "titol": "Tinc set de venjança",
-      "url": "/api/v1/episodis/6x60.json"
+      "url": "/api/v1/episodis/6x01.json"
     },
     {
-      "id": "6x61",
+      "id": "6x02",
       "titol": "Tinc herbetes",
-      "url": "/api/v1/episodis/6x61.json"
+      "url": "/api/v1/episodis/6x02.json"
     },
     {
-      "id": "6x62",
+      "id": "6x03",
       "titol": "Tinc tota la vida per endavant",
-      "url": "/api/v1/episodis/6x62.json"
+      "url": "/api/v1/episodis/6x03.json"
     },
     {
-      "id": "6x63",
+      "id": "6x04",
       "titol": "Tinc cera",
-      "url": "/api/v1/episodis/6x63.json"
+      "url": "/api/v1/episodis/6x04.json"
     },
     {
-      "id": "6x64",
+      "id": "6x05",
       "titol": "Tinc un àngel de la guarda (urbana)",
-      "url": "/api/v1/episodis/6x64.json"
+      "url": "/api/v1/episodis/6x05.json"
     },
     {
-      "id": "6x65",
+      "id": "6x06",
       "titol": "Ho tinc tot controlat",
-      "url": "/api/v1/episodis/6x65.json"
+      "url": "/api/v1/episodis/6x06.json"
     },
     {
-      "id": "6x66",
+      "id": "6x07",
       "titol": "Tinc piu piu",
-      "url": "/api/v1/episodis/6x66.json"
+      "url": "/api/v1/episodis/6x07.json"
     },
     {
-      "id": "6x67",
+      "id": "6x08",
       "titol": "Tinc un tresor",
-      "url": "/api/v1/episodis/6x67.json"
+      "url": "/api/v1/episodis/6x08.json"
     },
     {
-      "id": "6x68",
+      "id": "6x09",
       "titol": "Tinc una cyberamiga",
-      "url": "/api/v1/episodis/6x68.json"
+      "url": "/api/v1/episodis/6x09.json"
     },
     {
-      "id": "6x69",
+      "id": "6x10",
       "titol": "Tinc hormones",
-      "url": "/api/v1/episodis/6x69.json"
+      "url": "/api/v1/episodis/6x10.json"
     },
     {
-      "id": "6x70",
+      "id": "6x11",
       "titol": "Tinc 48 hores",
-      "url": "/api/v1/episodis/6x70.json"
+      "url": "/api/v1/episodis/6x11.json"
     },
     {
-      "id": "6x71",
+      "id": "6x12",
       "titol": "Tinc un cacau",
-      "url": "/api/v1/episodis/6x71.json"
+      "url": "/api/v1/episodis/6x12.json"
     },
     {
-      "id": "6x72",
+      "id": "6x13",
       "titol": "Tinc remordiments",
-      "url": "/api/v1/episodis/6x72.json"
+      "url": "/api/v1/episodis/6x13.json"
     },
     {
-      "id": "6x73",
+      "id": "6x14",
       "titol": "Tinctouchdown",
-      "url": "/api/v1/episodis/6x73.json"
+      "url": "/api/v1/episodis/6x14.json"
     }
   ]
 }
