@@ -1,0 +1,14 @@
+{
+  "slug": "marina",
+  "nom": "Marina",
+  "nom_complet": null,
+  "descripcio": "Personatge que interpreta l'actriu Carme Pla i que apareix en 4 episodis. Durant un temps va ser núvia del David, quan aquest havia trencat amb la seva amiga Lola. És una noia simpàtica, baixeta i intel·ligent. Treballa com a oceanògrafa a l'Aquarium, a cura dels delfins.",
+  "actor": {
+    "slug": "carme-pla",
+    "nom": "Carme Pla"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "lola",
+  "nom": "Lola",
+  "nom_complet": null,
+  "descripcio": "Personatge interpretat per Laura Jou en 2 episodis. És la millor amiga de la Marina i la núvia del David durant uns dies. Havia estudiat amb l'Emma i també és amiga del Pol. El David organitza una festa per seduir-la i quan ho aconsegueix, s'adona que en realitat està enamorat de la seva amiga Marina, de manera que la seva relació només va durar uns dies.",
+  "actor": {
+    "slug": "laura-jou",
+    "nom": "Laura Jou"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

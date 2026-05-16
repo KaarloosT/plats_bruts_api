@@ -50,3 +50,42 @@ def test_apply_personatge_patch_ignores_unknown_slugs():
     )
     patched = overrides.apply_to_personatges([p])
     assert patched[0].descripcio is None
+
+
+def test_apply_appends_extra_personatges():
+    base = [Personatge(slug="existing", nom="Existing")]
+    overrides = Overrides(
+        extra_personatges=[
+            Personatge(slug="oriol-lopes", nom="Oriol Lopes",
+                       actor=Actor(slug="jordi-banacolocha", nom="Jordi Banacolocha"))
+        ],
+    )
+    result = overrides.apply_to_personatges(base)
+    assert len(result) == 2
+    assert result[1].slug == "oriol-lopes"
+    assert result[1].actor.nom == "Jordi Banacolocha"
+
+
+def test_apply_extras_does_not_duplicate_existing_slugs():
+    base = [Personatge(slug="lofi", nom="Lofi")]
+    overrides = Overrides(
+        extra_personatges=[Personatge(slug="lofi", nom="Lofi DIFFERENT")]
+    )
+    result = overrides.apply_to_personatges(base)
+    assert len(result) == 1
+    assert result[0].nom == "Lofi"  # scraped wins
+
+
+def test_load_overrides_reads_extra_personatges(tmp_path):
+    p = tmp_path / "overrides.json"
+    p.write_text(json.dumps({
+        "personatges_extra": [
+            {"slug": "test", "nom": "Test",
+             "actor": {"slug": "actor-1", "nom": "Actor 1"}}
+        ]
+    }), encoding="utf-8")
+    overrides = load_overrides(p)
+    assert len(overrides.extra_personatges) == 1
+    extra = overrides.extra_personatges[0]
+    assert extra.slug == "test"
+    assert extra.actor.nom == "Actor 1"

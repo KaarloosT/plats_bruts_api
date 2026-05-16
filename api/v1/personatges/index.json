@@ -1,5 +1,5 @@
 {
-  "count": 9,
+  "count": 27,
   "results": [
     {
       "slug": "josep-lopes",
@@ -45,6 +45,96 @@
       "slug": "stasky",
       "nom": "Stasky",
       "url": "/api/v1/personatges/stasky.json"
+    },
+    {
+      "slug": "oriol-lopes",
+      "nom": "Oriol Lopes",
+      "url": "/api/v1/personatges/oriol-lopes.json"
+    },
+    {
+      "slug": "doctor-prim",
+      "nom": "Doctor Prim",
+      "url": "/api/v1/personatges/doctor-prim.json"
+    },
+    {
+      "slug": "rosa",
+      "nom": "Rosa",
+      "url": "/api/v1/personatges/rosa.json"
+    },
+    {
+      "slug": "guillermina",
+      "nom": "Guillermina",
+      "url": "/api/v1/personatges/guillermina.json"
+    },
+    {
+      "slug": "marina",
+      "nom": "Marina",
+      "url": "/api/v1/personatges/marina.json"
+    },
+    {
+      "slug": "arrendador",
+      "nom": "Arrendador",
+      "url": "/api/v1/personatges/arrendador.json"
+    },
+    {
+      "slug": "lidia",
+      "nom": "Lídia",
+      "url": "/api/v1/personatges/lidia.json"
+    },
+    {
+      "slug": "doctor-antoni-guell-i-fuster",
+      "nom": "Doctor Antoni Güell i Fuster",
+      "url": "/api/v1/personatges/doctor-antoni-guell-i-fuster.json"
+    },
+    {
+      "slug": "consol-sobirana",
+      "nom": "Consol Sobirana",
+      "url": "/api/v1/personatges/consol-sobirana.json"
+    },
+    {
+      "slug": "metge-del-seguro",
+      "nom": "Metge del «seguro»",
+      "url": "/api/v1/personatges/metge-del-seguro.json"
+    },
+    {
+      "slug": "angel-fontanilles-i-cruilles",
+      "nom": "Àngel Fontanilles i Cruïlles",
+      "url": "/api/v1/personatges/angel-fontanilles-i-cruilles.json"
+    },
+    {
+      "slug": "lola",
+      "nom": "Lola",
+      "url": "/api/v1/personatges/lola.json"
+    },
+    {
+      "slug": "diana-zumalarraga",
+      "nom": "Diana Zumalarraga",
+      "url": "/api/v1/personatges/diana-zumalarraga.json"
+    },
+    {
+      "slug": "agents-padilla-i-castillejos",
+      "nom": "Agents Padilla i Castillejos",
+      "url": "/api/v1/personatges/agents-padilla-i-castillejos.json"
+    },
+    {
+      "slug": "marc-tomeu",
+      "nom": "Marc Tomeu",
+      "url": "/api/v1/personatges/marc-tomeu.json"
+    },
+    {
+      "slug": "ariadna",
+      "nom": "Ariadna",
+      "url": "/api/v1/personatges/ariadna.json"
+    },
+    {
+      "slug": "ivonne",
+      "nom": "Ivonne",
+      "url": "/api/v1/personatges/ivonne.json"
+    },
+    {
+      "slug": "marujito",
+      "nom": "Marujito",
+      "url": "/api/v1/personatges/marujito.json"
     }
   ]
 }

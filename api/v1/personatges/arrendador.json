@@ -1,0 +1,14 @@
+{
+  "slug": "arrendador",
+  "nom": "Arrendador",
+  "nom_complet": null,
+  "descripcio": "Santi Ibáñez interpreta durant 4 episodis aquest personatge. És el propietari del pis on viuen els personatges principals i de la caseta de fusta. És un gran venedor i aprofita per demanar un preu molt alt pels pisos que té. En el cas dels nois, s'aprofita de la ingenuïtat del David per treure un preu molt alt pel lloguer del pis.",
+  "actor": {
+    "slug": "santi-ibanez",
+    "nom": "Santi Ibáñez"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

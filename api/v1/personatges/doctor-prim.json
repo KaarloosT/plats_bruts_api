@@ -1,0 +1,14 @@
+{
+  "slug": "doctor-prim",
+  "nom": "Doctor Prim",
+  "nom_complet": null,
+  "descripcio": "Personatge interpretat per Carles Canut que apareix en 6 episodis. És el metge privat del David que treballa en un prestigiós hospital de Barcelona amb el seu pare. És un aficionat radical del Barça i és el soci número 69. Sempre s'acomiada amb un: «Visca el Barça!».",
+  "actor": {
+    "slug": "carles-canut",
+    "nom": "Carles Canut"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

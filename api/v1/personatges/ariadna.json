@@ -1,0 +1,14 @@
+{
+  "slug": "ariadna",
+  "nom": "Ariadna",
+  "nom_complet": null,
+  "descripcio": "Bibiana Guzmán és l'actriu que interpreta aquest personatge que apareix en 1 episodi. És una estudiant de 16 anys, filla del primer matrimoni de la Mercedes. Intenta demostrar que és una noia madura però en realitat és una persona ingènua, molt influenciable i infantil. Té un petit affaire amb el Lopes.",
+  "actor": {
+    "slug": "bibiana-guzman",
+    "nom": "Bibiana Guzmán"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

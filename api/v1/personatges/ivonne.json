@@ -1,0 +1,14 @@
+{
+  "slug": "ivonne",
+  "nom": "Ivonne",
+  "nom_complet": null,
+  "descripcio": "Mònica Van Campen interpreta durant un episodi el personatge d'una núvia francesa que es troba amb el Lopes arran d'un malentès.",
+  "actor": {
+    "slug": "monica-van-campen",
+    "nom": "Mònica Van Campen"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

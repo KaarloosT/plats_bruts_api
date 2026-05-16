@@ -1,0 +1,14 @@
+{
+  "slug": "consol-sobirana",
+  "nom": "Consol Sobirana",
+  "nom_complet": null,
+  "descripcio": "L'actriu Vicky Peña interpreta aquest personatge durant 4 episodis. És l'esposa del Dr. Güell i mare del David. És una dona molt riallera i també glamurosa. Gran amant de l'art i de la decoració d'interiors.",
+  "actor": {
+    "slug": "vicky-pena",
+    "nom": "Vicky Peña"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

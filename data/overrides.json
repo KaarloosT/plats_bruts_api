@@ -1,5 +1,133 @@
 {
   "personatges": {},
+  "personatges_extra": [
+    {
+      "slug": "oriol-lopes",
+      "nom": "Oriol Lopes",
+      "descripcio": "Personatge interpretat per Jordi Banacolocha que apareix en 7 episodis. És el pare del Lopes, tot i que són completament diferents. Ell és un hippie, revolucionari, comunista, pacifista, antimilitarista, antiintervencionista, anticonsumista, feminista i ecologista. Li agrada molt sortir de festa, lligar amb noies, fumar marihuana i beure. Al principi de la sèrie decideix anar-se'n a viure a una masia a Porrera per treballar com a mestre en una escola, i el seu fill, que encara vivia amb ell, s'ha de buscar un pis per viure sol. Quan torna a Barcelona per visitar el Lopes, coneix el David i connecten molt: surten de festa junts, beuen, fumen i fan performances a les Rambles. Una nit coneix la Carbonell i, sense saber que és l'assistent del David, s'enamora d'ella. Posteriorment es casen, tot i que cap dels dos creu en el matrimoni, però es separen perquè la convivència entre ells és molt dura. En diverses ocasions li demana diners al Lopes amb qualsevol excusa, però se'ls acaba gastant anant de viatge amb alguna noia, fins i tot amb alguna núvia del David. No li agraden les cadires i prefereix seure a terra o sobre algun coixí.",
+      "actor": {"slug": "jordi-banacolocha", "nom": "Jordi Banacolocha"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "doctor-prim",
+      "nom": "Doctor Prim",
+      "descripcio": "Personatge interpretat per Carles Canut que apareix en 6 episodis. És el metge privat del David que treballa en un prestigiós hospital de Barcelona amb el seu pare. És un aficionat radical del Barça i és el soci número 69. Sempre s'acomiada amb un: «Visca el Barça!».",
+      "actor": {"slug": "carles-canut", "nom": "Carles Canut"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "rosa",
+      "nom": "Rosa",
+      "descripcio": "Personatge interpretat per Meritxell Sabaté que apareix en 5 episodis. És la dona del Ramón, molt seriosa, exigent i que parla molt poc. És la fan número u del Lopes, fins al punt que el corteja i tenen relacions a la cabina de Ràdio Bofarull.",
+      "actor": {"slug": "meritxell-sabate", "nom": "Meritxell Sabaté"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "guillermina",
+      "nom": "Guillermina",
+      "descripcio": "Personatge interpretat per Mercè Martínez que apareix en 5 episodis. És la núvia del Lopes durant la sisena temporada. Es van conèixer en un xat, però abans de sortir amb el Lopes, el David va intentar seduir-la amb un anunci on buscava sexe sense compromís.",
+      "actor": {"slug": "merce-martinez", "nom": "Mercè Martínez"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "marina",
+      "nom": "Marina",
+      "descripcio": "Personatge que interpreta l'actriu Carme Pla i que apareix en 4 episodis. Durant un temps va ser núvia del David, quan aquest havia trencat amb la seva amiga Lola. És una noia simpàtica, baixeta i intel·ligent. Treballa com a oceanògrafa a l'Aquarium, a cura dels delfins.",
+      "actor": {"slug": "carme-pla", "nom": "Carme Pla"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "arrendador",
+      "nom": "Arrendador",
+      "descripcio": "Santi Ibáñez interpreta durant 4 episodis aquest personatge. És el propietari del pis on viuen els personatges principals i de la caseta de fusta. És un gran venedor i aprofita per demanar un preu molt alt pels pisos que té. En el cas dels nois, s'aprofita de la ingenuïtat del David per treure un preu molt alt pel lloguer del pis.",
+      "actor": {"slug": "santi-ibanez", "nom": "Santi Ibáñez"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "lidia",
+      "nom": "Lídia",
+      "descripcio": "Personatge interpretat per Marta Millà que apareix en la sèrie durant 4 episodis. Va ser la núvia del Lopes durant dotze anys, des que es van conèixer quan eren monitors de colònies. En el primer episodi de la sèrie, trenca la seva relació en veure que el Lopes prefereix compartir pis amb el David en lloc d'anar-se'n a viure amb ella. Finalment decideix anar-se'n a treballar al Brasil per a una ONG dedicada a muntar escoles per als indígenes. És una dona seriosa i decidida, una mica hippie i amb força mal humor. Ella i el David es van conèixer als campaments i es comenta que els nens l'anomenaven «La Gripau» pel seu físic.",
+      "actor": {"slug": "marta-milla", "nom": "Marta Millà"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "doctor-antoni-guell-i-fuster",
+      "nom": "Doctor Antoni Güell i Fuster",
+      "descripcio": "Personatge que apareix en 4 episodis i que interpreta Jesús Ferrer. És el pare del David i està casat amb la Consol Sobirana, mare del David, mantinguda pel marit.",
+      "actor": {"slug": "jesus-ferrer", "nom": "Jesús Ferrer"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "consol-sobirana",
+      "nom": "Consol Sobirana",
+      "descripcio": "L'actriu Vicky Peña interpreta aquest personatge durant 4 episodis. És l'esposa del Dr. Güell i mare del David. És una dona molt riallera i també glamurosa. Gran amant de l'art i de la decoració d'interiors.",
+      "actor": {"slug": "vicky-pena", "nom": "Vicky Peña"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "metge-del-seguro",
+      "nom": "Metge del «seguro»",
+      "descripcio": "Personatge interpretat per Enric Pous durant 4 episodis. És el metge de la Seguretat Social a qui criden els protagonistes quan estan malalts i els visita a casa. Té un caràcter molt sec, diagnostica les malalties molt ràpidament i sense atendre gairebé el pacient. L'actor que l'interpretava va morir durant el rodatge de la sèrie i per aquest motiu l'episodi 40 es va dedicar a la seva memòria.",
+      "actor": {"slug": "enric-pous", "nom": "Enric Pous"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "angel-fontanilles-i-cruilles",
+      "nom": "Àngel Fontanilles i Cruïlles",
+      "descripcio": "Personatge interpretat per Marc Cartes que va aparèixer en 4 episodis. És un agent de la Guàrdia Urbana de Barcelona que apareix perseguint l'Emma a la platja quan aquesta venia cocos il·legalment. És un noi molt responsable, estricte, ordenat, perfeccionista i rigorós, i defensa per sobre de tot el compliment de la normativa. Li encanta la seva feina, sobretot dirigir el trànsit i els embussos. Finalment s'enamora de l'Emma però els seus caràcters són molt diferents i per amor trai els seus valors.",
+      "actor": {"slug": "marc-cartes", "nom": "Marc Cartes"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "lola",
+      "nom": "Lola",
+      "descripcio": "Personatge interpretat per Laura Jou en 2 episodis. És la millor amiga de la Marina i la núvia del David durant uns dies. Havia estudiat amb l'Emma i també és amiga del Pol. El David organitza una festa per seduir-la i quan ho aconsegueix, s'adona que en realitat està enamorat de la seva amiga Marina, de manera que la seva relació només va durar uns dies.",
+      "actor": {"slug": "laura-jou", "nom": "Laura Jou"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "diana-zumalarraga",
+      "nom": "Diana Zumalarraga",
+      "descripcio": "Aquest personatge que apareix en 2 episodis és interpretat per Marieta Sánchez. És una dona cubana que coneix el Lopes quan aquest viatja a Cuba amb l'àvia del David. Els dos s'entenen molt bé i el Lopes decideix que l'acompanyi a Catalunya per casar-se i així ella pugui tramitar la residència a Espanya. És una noia baixeta, guapa i molt simpàtica que ha estudiat enginyeria genètica però que no troba feina al seu país. Gràcies al Lopes i al seu permís de residència, aconsegueix feina en un laboratori a Finlàndia.",
+      "actor": {"slug": "marieta-sanchez", "nom": "Marieta Sánchez"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "agents-padilla-i-castillejos",
+      "nom": "Agents Padilla i Castillejos",
+      "descripcio": "Aquests dos agents, interpretats per Jesús Calvo i Genís Sánchez, apareixen en dos episodis: quan detenen el Lopes, el David i la Carbonell per possessió de drogues, i també quan investiguen un assassí en sèrie que hi ha al barri.",
+      "actor": {"slug": "jesus-calvo", "nom": "Jesús Calvo"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "marc-tomeu",
+      "nom": "Marc Tomeu",
+      "descripcio": "Interpretat per Víctor Álvaro, apareix en un episodi com a becari de Ràdio Bofarull.",
+      "actor": {"slug": "victor-alvaro", "nom": "Víctor Álvaro"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "ariadna",
+      "nom": "Ariadna",
+      "descripcio": "Bibiana Guzmán és l'actriu que interpreta aquest personatge que apareix en 1 episodi. És una estudiant de 16 anys, filla del primer matrimoni de la Mercedes. Intenta demostrar que és una noia madura però en realitat és una persona ingènua, molt influenciable i infantil. Té un petit affaire amb el Lopes.",
+      "actor": {"slug": "bibiana-guzman", "nom": "Bibiana Guzmán"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "ivonne",
+      "nom": "Ivonne",
+      "descripcio": "Mònica Van Campen interpreta durant un episodi el personatge d'una núvia francesa que es troba amb el Lopes arran d'un malentès.",
+      "actor": {"slug": "monica-van-campen", "nom": "Mònica Van Campen"},
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    },
+    {
+      "slug": "marujito",
+      "nom": "Marujito",
+      "descripcio": "És un canari que l'Emma es troba i al qual adopta com a mascota.",
+      "actor": null,
+      "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+    }
+  ],
   "cites": [
     {
       "id": "c001",

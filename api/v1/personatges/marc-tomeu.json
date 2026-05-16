@@ -1,0 +1,14 @@
+{
+  "slug": "marc-tomeu",
+  "nom": "Marc Tomeu",
+  "nom_complet": null,
+  "descripcio": "Interpretat per Víctor Álvaro, apareix en un episodi com a becari de Ràdio Bofarull.",
+  "actor": {
+    "slug": "victor-alvaro",
+    "nom": "Víctor Álvaro"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

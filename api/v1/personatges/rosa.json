@@ -1,0 +1,14 @@
+{
+  "slug": "rosa",
+  "nom": "Rosa",
+  "nom_complet": null,
+  "descripcio": "Personatge interpretat per Meritxell Sabaté que apareix en 5 episodis. És la dona del Ramón, molt seriosa, exigent i que parla molt poc. És la fan número u del Lopes, fins al punt que el corteja i tenen relacions a la cabina de Ràdio Bofarull.",
+  "actor": {
+    "slug": "meritxell-sabate",
+    "nom": "Meritxell Sabaté"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}

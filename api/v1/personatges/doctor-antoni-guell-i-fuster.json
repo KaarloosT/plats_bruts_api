@@ -1,0 +1,14 @@
+{
+  "slug": "doctor-antoni-guell-i-fuster",
+  "nom": "Doctor Antoni Güell i Fuster",
+  "nom_complet": null,
+  "descripcio": "Personatge que apareix en 4 episodis i que interpreta Jesús Ferrer. És el pare del David i està casat amb la Consol Sobirana, mare del David, mantinguda pel marit.",
+  "actor": {
+    "slug": "jesus-ferrer",
+    "nom": "Jesús Ferrer"
+  },
+  "temporades": [],
+  "primera_aparicio": null,
+  "imatge": null,
+  "font_wikipedia": "https://es.wikipedia.org/wiki/Anexo:Personajes_de_Plats_Bruts"
+}
