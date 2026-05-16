@@ -172,6 +172,9 @@ def _extract_turn(element) -> Optional[tuple[str, str]]:
     # Strip leading colon/whitespace and citation markers
     text = text.lstrip(": \t\n")
     text = _CITE_REF_RE.sub("", text)
+    # Remove empty brackets left over after stage-direction <i> tags were dropped
+    # (e.g. "[<i>somrient</i>] hola" became "[] hola").
+    text = re.sub(r"\[\s*\]", "", text)
     text = re.sub(r"\s+", " ", text).strip()
     if not text:
         return None

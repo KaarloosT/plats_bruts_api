@@ -20,10 +20,10 @@
 | Personatges | 9 | `/personatges/index.json` |
 | Episodis | 73 | `/episodis/index.json` |
 | Temporades | 6 | `/temporades/index.json` |
-| Cites | 3 (curades) | `/cites/index.json` |
+| Cites | ~777 | `/cites/index.json` |
 | Localitzacions | 5 | `/localitzacions/index.json` |
 
-Cada **personatge** ve amb la seva descripció (uns 1.500 caràcters de prosa biogràfica de Viquipèdia) i l'actor que el va interpretar. Cada **episodi** porta la sinopsi completa (300-1.500 caràcters).
+Cada **personatge** ve amb la seva descripció (uns 1.500 caràcters de prosa biogràfica de Viquipèdia) i l'actor que el va interpretar. Cada **episodi** porta la sinopsi completa (300-1.500 caràcters). Les **cites** són diàlegs reals extrets de [Wikiquote en català](https://ca.wikiquote.org/wiki/Categoria:Plats_Bruts), atribuïdes al personatge i episodi.
 
 Cada índex retorna `{ "count": N, "results": [...] }`. Cada fitxa de detall viu en una URL pròpia, p. ex. `/personatges/josep-lopes.json` o `/episodis/1x01.json`.
 
