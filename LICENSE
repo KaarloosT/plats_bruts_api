@@ -19,14 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
----
-
-This license applies ONLY to the source code of the project (the Python
-scraper under `scraper/`, the build configuration, the documentation HTML,
-and similar code/text authored as part of this project).
-
-The DATA published under `api/v1/` is a derivative of content from the
-Catalan Wikipedia and is licensed under Creative Commons Attribution-
-ShareAlike 4.0 International (CC BY-SA 4.0). See `LICENSE-DATA` for the
-terms that apply to those JSON files.
