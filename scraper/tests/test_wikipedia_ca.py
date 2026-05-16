@@ -52,3 +52,28 @@ def test_fetcher_throttles_between_live_requests(tmp_path):
     assert mock_sleep.called
     slept = mock_sleep.call_args.args[0]
     assert slept > 0
+
+
+from scraper.sources.wikipedia_ca import parse_personatges
+
+
+def test_parse_personatges_extracts_rows(plats_bruts_html):
+    personatges = parse_personatges(plats_bruts_html, source_url="https://ca.wikipedia.org/wiki/Plats_bruts")
+
+    assert len(personatges) == 2
+    lofi = personatges[0]
+    assert lofi.slug == "lofi"
+    assert lofi.nom == "Lofi"
+    assert lofi.actor.slug == "joel-joan"
+    assert lofi.actor.nom == "Joel Joan"
+    assert lofi.temporades == [1, 2, 3]
+    assert lofi.font_wikipedia == "https://ca.wikipedia.org/wiki/Plats_bruts"
+
+
+def test_parse_personatges_handles_accented_names(plats_bruts_html):
+    personatges = parse_personatges(plats_bruts_html, source_url="https://ca.wikipedia.org/wiki/Plats_bruts")
+    emili = personatges[1]
+    assert emili.nom == "Em·li"
+    assert emili.slug == "emli"  # interpunct stripped by slugify
+    assert emili.actor.nom == "Jordi Sànchez"
+    assert emili.actor.slug == "jordi-sanchez"

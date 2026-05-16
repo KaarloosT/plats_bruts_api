@@ -1,8 +1,13 @@
+import re
 import time
 from pathlib import Path
 from typing import Optional
 
 import requests
+from bs4 import BeautifulSoup
+
+from scraper.models import Actor, Personatge
+from scraper.slugify import slugify
 
 USER_AGENT = "plats-bruts-api/0.1 (https://github.com/plats-bruts-api; bastanerada77@gmail.com)"
 
@@ -36,3 +41,43 @@ class WikipediaCaFetcher:
         remaining = self.throttle_seconds - elapsed
         if remaining > 0:
             time.sleep(remaining)
+
+
+def parse_personatges(html: str, source_url: str) -> list[Personatge]:
+    soup = BeautifulSoup(html, "lxml")
+    heading_span = soup.find("span", id="Personatges")
+    if heading_span is None:
+        return []
+    table = heading_span.find_parent().find_next("table", class_="wikitable")
+    if table is None:
+        return []
+
+    personatges: list[Personatge] = []
+    rows = table.find("tbody").find_all("tr")
+    for row in rows[1:]:  # skip header row
+        cells = row.find_all(["td", "th"])
+        if len(cells) < 3:
+            continue
+
+        nom = cells[0].get_text(strip=True)
+        actor_text = cells[1].get_text(strip=True)
+        temporades_text = cells[2].get_text(strip=True)
+
+        personatges.append(Personatge(
+            slug=slugify(nom),
+            nom=nom,
+            actor=Actor(slug=slugify(actor_text), nom=actor_text),
+            temporades=_parse_temporades_range(temporades_text),
+            font_wikipedia=source_url,
+        ))
+    return personatges
+
+
+def _parse_temporades_range(text: str) -> list[int]:
+    """Parses '1-3' -> [1,2,3], '1, 3' -> [1,3], '2' -> [2]."""
+    text = text.strip()
+    match = re.fullmatch(r"(\d+)\s*-\s*(\d+)", text)
+    if match:
+        start, end = int(match.group(1)), int(match.group(2))
+        return list(range(start, end + 1))
+    return [int(n.strip()) for n in text.split(",") if n.strip().isdigit()]
