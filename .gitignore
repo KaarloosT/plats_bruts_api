@@ -9,3 +9,4 @@ scraper/.cache/
 *.egg-info/
 build/
 dist/
+.claude/
