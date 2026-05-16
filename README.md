@@ -6,7 +6,7 @@ A static REST API of data about the Catalan sitcom **Plats Bruts** (TV3, 1999-20
 
 ## Endpoints
 
-Base URL: `https://<user>.github.io/plats-bruts-api/api/v1/`
+Base URL: `https://kaarloost.github.io/plats_bruts_api/api/v1/`
 
 Documentation: see `docs/index.html` (also served from GitHub Pages root).
 
