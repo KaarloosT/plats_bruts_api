@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Plats Bruts API</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #222; }
+    code, pre { background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; font-family: "SF Mono", Menlo, monospace; }
+    pre { padding: 1rem; overflow-x: auto; }
+    h1, h2 { border-bottom: 1px solid #eee; padding-bottom: 0.3rem; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 0.4rem 0.6rem; text-align: left; }
+    th { background: #fafafa; }
+    .disclaimer { font-size: 0.85rem; color: #666; border-left: 3px solid #ddd; padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Plats Bruts API</h1>
+  <p>API REST estàtica amb dades sobre la sitcom catalana <strong>Plats Bruts</strong> (TV3, 1999-2002). Sense autenticació, sense límits.</p>
+
+  <p class="disclaimer">
+    Projecte de fans, sense afiliació amb TV3 ni la productora. Dades extretes de Viquipèdia
+    (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>).
+  </p>
+
+  <h2>URL base</h2>
+  <pre><code>https://&lt;usuari&gt;.github.io/plats-bruts-api/api/v1/</code></pre>
+
+  <h2>Endpoints</h2>
+  <table>
+    <tr><th>Recurs</th><th>Índex</th><th>Detall</th></tr>
+    <tr><td>Personatges</td><td><code>/personatges/index.json</code></td><td><code>/personatges/{slug}.json</code></td></tr>
+    <tr><td>Temporades</td><td><code>/temporades/index.json</code></td><td><code>/temporades/{n}.json</code></td></tr>
+    <tr><td>Episodis</td><td><code>/episodis/index.json</code></td><td><code>/episodis/{T}x{NN}.json</code></td></tr>
+    <tr><td>Cites</td><td><code>/cites/index.json</code></td><td><code>/cites/{id}.json</code></td></tr>
+    <tr><td>Localitzacions</td><td><code>/localitzacions/index.json</code></td><td><code>/localitzacions/{slug}.json</code></td></tr>
+  </table>
+
+  <h2>Exemple amb fetch</h2>
+  <pre><code>const res = await fetch("https://&lt;usuari&gt;.github.io/plats-bruts-api/api/v1/personatges/josep-lopes.json");
+const lopes = await res.json();
+console.log(lopes.nom);</code></pre>
+
+  <h2>Exemple amb curl</h2>
+  <pre><code>curl https://&lt;usuari&gt;.github.io/plats-bruts-api/api/v1/episodis/1x01.json</code></pre>
+
+  <h2>Codi font</h2>
+  <p>Tot el codi del scraper i les dades estan a <a href="https://github.com/&lt;usuari&gt;/plats-bruts-api">GitHub</a>.</p>
+</body>
+</html>
