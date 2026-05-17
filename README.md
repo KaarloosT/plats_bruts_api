@@ -6,7 +6,8 @@
 
 > API REST estàtica amb dades sobre la sitcom catalana **Plats Bruts** (TV3, 1999-2002), inspirada en [PokéAPI](https://pokeapi.co/). Hostatjada gratuïtament a GitHub Pages, sense autenticació i sense límits.
 
-🌐 **Documentació i guia d'ús:** <https://kaarloost.github.io/plats_bruts_api/>
+🔍 **Explorador visual:** <https://kaarloost.github.io/plats_bruts_api/>
+📖 **Documentació per desenvolupadors:** <https://kaarloost.github.io/plats_bruts_api/docs.html>
 🔗 **URL base de l'API:** `https://kaarloost.github.io/plats_bruts_api/api/v1/`
 
 > ⚠️ Projecte de fans, sense afiliació amb TV3 ni la productora. Dades extretes de Viquipèdia (CC BY-SA 4.0).
