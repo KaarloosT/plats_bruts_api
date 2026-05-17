@@ -11,10 +11,13 @@ series "Plats Bruts", which is a registered trademark and copyrighted work.
   - Copyright:   © TV3 / El Terrat. All rights reserved.
 
 The image files under `assets/` (logo.png, social_preview.png, favicon.ico)
-are derivative works of the official series logo. They are used here in a
+are derivative works of the official series logo. The image files under
+`assets/personatges/` are character stills sourced from a long-running
+fan blog (https://platsbrutserie.blogspot.com). They are used here in a
 non-commercial, fan-driven context for the purpose of identifying the
-series this API describes — analogous to how Wikipedia uses the same logo
-on its article about the series.
+series and its characters — analogous to how Wikipedia uses the same
+logo on its article about the series and how IMDb/Wikipedia display
+character stills in informational contexts.
 
 The visual material is NOT licensed under the project's MIT or CC BY-SA
 licenses. The rights remain with TV3 / El Terrat. If a representative of

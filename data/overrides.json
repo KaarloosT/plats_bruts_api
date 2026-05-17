@@ -1,10 +1,31 @@
 {
   "personatges": {
     "david-guell-i-sobirana": {
-      "imatge": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Joel_Joan_%282012%29.jpg/330px-Joel_Joan_%282012%29.jpg"
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/david-guell-i-sobirana.jpg"
     },
     "josep-lopes": {
-      "imatge": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Jordi_blanco_y_negro_redes.jpg/330px-Jordi_blanco_y_negro_redes.jpg"
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/josep-lopes.jpg"
+    },
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/emma-cruscat-de-palausabullabellobach-i-gonzalez.jpg"
+    },
+    "conxita-carbonell": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/conxita-carbonell.jpg"
+    },
+    "pol-requena": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/pol-requena.jpg"
+    },
+    "maria-de-las-mercedes-de-simancas-i-murrieta": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/maria-de-las-mercedes-de-simancas-i-murrieta.jpg"
+    },
+    "ramon-zamora": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/ramon-zamora.jpg"
+    },
+    "iaia-asunsion": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/iaia-asunsion.jpg"
+    },
+    "stasky": {
+      "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/stasky.jpg"
     }
   },
   "personatges_extra": [
