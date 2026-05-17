@@ -118,7 +118,9 @@
 </footer>
 
 <script>
-const BASE = "/api/v1";
+// Relative path so this works whether served from kaarloost.github.io/plats_bruts_api/
+// or from a local file:// preview. explorer.html lives in the same directory as api/.
+const BASE = "api/v1";
 
 // State
 let personatgesIndex = null;
