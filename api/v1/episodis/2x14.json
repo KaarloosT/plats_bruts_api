@@ -6,8 +6,20 @@
   "sinopsi": "La Carbonell i l'Oriol estan ben enamorats i no paren de sortir de festa, però fan patir constantment al Lopes i al David. Els nois no veuen amb bons ulls que la relació de la Carbonell i l'Oriol sigui tan poc formal i els emboliquen de tal manera que acaben convertint un simple berenar en un casament . A cap dels dos els agrada la idea de casar-se però per tal de no ferir els sentiments de la parella, accepten ambdós. Els nois s'encarreguen de la preparació de tot el muntatge, primer intenten fer un casament civil però els jutjats no els convenç, de manera que després pensen en una cerimònia en una petita església romànica oficiada per un mossèn \" progre \". Mentrestant, el Ramon i la Mercedes s'encarreguen de preparar un comiat de solters per separat. Les imatges del casament i la desfilada són un muntatge de l'enllaç entre la Infanta Cristina i Iñaki Urdangarín que es va realitzar a la Catedral de Barcelona .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-2x14-01",
+    "wq-2x14-02",
+    "wq-2x14-03",
+    "wq-2x14-04",
+    "wq-2x14-05",
+    "wq-2x14-06",
+    "wq-2x14-07"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

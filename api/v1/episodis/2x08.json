@@ -6,8 +6,35 @@
   "sinopsi": "Ha arribat la nit de Tots Sants i el David ha preparat una terrorífica festa de Halloween , però el Lopes està molt aferrat a la tradició catalana i no vol perdre la seva identitat, de manera que ell celebrarà la castanyada . Malauradament, una maledicció pesa sobre el pis dels nois per una antiga llegenda molt macabra, fins i tot la immobiliària els paga una nit d' hotel perquè no passin la nit al pis. Els nois es neguen a marxar per celebrar la festa però comencen a produir-se una sèrie de fets paranormals que els deixa atrapats al pis i amb la desaparició de l'Emma. Després d'una sessió d' esoterisme sense èxit, se'ls apareix una nena vestida de comunió que parla un idioma estrany.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-2x08-01",
+    "wq-2x08-02",
+    "wq-2x08-03",
+    "wq-2x08-04",
+    "wq-2x08-05",
+    "wq-2x08-06",
+    "wq-2x08-07",
+    "wq-2x08-08",
+    "wq-2x08-09",
+    "wq-2x08-10",
+    "wq-2x08-11",
+    "wq-2x08-12",
+    "wq-2x08-13",
+    "wq-2x08-14",
+    "wq-2x08-15",
+    "wq-2x08-16",
+    "wq-2x08-17",
+    "wq-2x08-18",
+    "wq-2x08-19",
+    "wq-2x08-20"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

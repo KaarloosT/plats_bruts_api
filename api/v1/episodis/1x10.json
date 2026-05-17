@@ -6,8 +6,21 @@
   "sinopsi": "El Pol descobreix que l'Emma està enamorada del Lopes i li concerta, d'amagat d'ella, un cita a cegues amb el Lopes fent-se passar per una fan anònima. Quan el Pol li explica, ella s'espanta i s'amaga darrere la barra del bar. El Lopes entra i pregunta si ha vist alguna dona, el Pol, per treure's el merder li assenyala una francesa que està llegint en un taula. Per desgràcia del Pol i l'Emma, el Lopes i la francesa s'acaben enamorant. L'endemà, el Pol li explica al Lopes que ell va concertar la cita perquè creia que l'Emma estava enamorada. El Lopes decideix deixar la francesa i quan li demana a l'Emma de dinar junts, descobreix que just aquella nit l'Emma havia conegut un belga . D'altra banda el David i la Carbonell s'adonen que estan enganxats a la televisió i el David decideix donar el televisor a Càritas , pels nens del Sudan . Quan la Carbonell s'adona que no hi ha televisió per poc no té un atac de cor , i el David, que encara ho porta pitjor, acaba agafant una televisió de casa dels seus pares, però li demana a la Carbonell que guardi el comandament per només mirar els informatius i les pel·lícules bones. La Carbonell amaga molt bé el comandament i el David acaba desesperat i amb el pis potes enlaire buscant-lo. La Ivonne, la francesa que lliga amb el Lopes, és interpretada per la Mònica Van Campen .",
   "data_emissio": "1999-06-28",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "pol-requena"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x10-01",
+    "wq-1x10-02",
+    "wq-1x10-03",
+    "wq-1x10-04",
+    "wq-1x10-05",
+    "wq-1x10-06",
+    "wq-1x10-07",
+    "wq-1x10-08"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

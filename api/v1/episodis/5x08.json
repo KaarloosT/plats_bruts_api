@@ -6,8 +6,27 @@
   "sinopsi": "El Lopes té un somni molt estrany, primer va pel carrer sense pantalons, i després veu la Mercedes vestida de carioca a la ràdio. Quan es desperta, parla amb el David i de sobte, apareix una cabra a casa. El Lopes no entén res i el David el convenç que encara està somiant. El Lopes ja n'està fart d'estar conscient en el seu somni i decideix tirar-se del balcó per despertar-se, però resulta que apareix en un somni del Ramon mentre aquest fa una bacanal . El Lopes decideix tirar el Ramon per la finestra perquè es desperti, i tot seguit apareixen el Lopes, el David i el Ramon fent d' escultures en el luxós despatx de la Mercedes. Seguidament desperten la Mercedes i tots apareixen en el somni del David que està apunt de guanyar un Oscar . Després apareixen al somni de la iaia, després al de l'Emma…",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "david-guell-i-sobirana",
+    "iaia-asunsion",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x08-01",
+    "wq-5x08-02",
+    "wq-5x08-03",
+    "wq-5x08-04",
+    "wq-5x08-05",
+    "wq-5x08-06",
+    "wq-5x08-07",
+    "wq-5x08-08",
+    "wq-5x08-09",
+    "wq-5x08-10",
+    "wq-5x08-11",
+    "wq-5x08-12"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

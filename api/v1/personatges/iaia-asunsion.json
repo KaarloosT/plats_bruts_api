@@ -7,5 +7,17 @@
   "temporades": [],
   "primera_aparicio": null,
   "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/iaia-asunsion.jpg",
-  "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts"
+  "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts",
+  "cites": [
+    "wq-5x01-12",
+    "wq-5x02-10",
+    "wq-5x03-09",
+    "wq-5x04-08",
+    "wq-5x05-06",
+    "wq-5x06-04",
+    "wq-5x07-03",
+    "wq-5x08-03",
+    "wq-5x09-02",
+    "wq-5x10-01"
+  ]
 }

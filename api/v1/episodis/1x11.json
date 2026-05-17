@@ -6,8 +6,19 @@
   "sinopsi": "El David descobreix que la seva mare té un amant, precisament ara que estan a punt de celebrar els vint-i-cinc anys de casats. Està convençut que el millor que pot fer és explicar-ho al seu pare però no sap com. Per acabar-ho d'adobar, el doctor Güell decideix que el millor lloc per celebrar les noces d'argent és a casa del David i que aquest s'encarregui de fer el sopar. El David no pot suportar tanta hipocresia i no s'hi escarrassa gens en preparar-lo. A mig sopar, els seus pares se'n van davant la desagradable actitud del seu fill. Els pares del David temen que s'hagi tornat drogoaddicte , de manera que van a parlar amb el Lopes perquè els expliqui què li passa al David, i aquest els diu que el seu fill és alcohòlic .",
   "data_emissio": "1999-07-05",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "pol-requena"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x11-01",
+    "wq-1x11-02",
+    "wq-1x11-03",
+    "wq-1x11-04",
+    "wq-1x11-05",
+    "wq-1x11-06"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

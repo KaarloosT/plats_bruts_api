@@ -8,6 +8,8 @@
   "duracio_min": null,
   "personatges": [],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-2x16-01"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

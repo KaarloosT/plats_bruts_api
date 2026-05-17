@@ -6,8 +6,30 @@
   "sinopsi": "El Lopes i el David comencen a fer entrevistes a diverses persones per contractar una nova assistenta però al final acaben contractant un majordom , l'Anthony. L'Emma el coneix per casualitat i sent molta atracció per ell tot i ser un home força gran. Més endavant, l'Emma intenta parlar amb ell i descobreix que l'atracció és mútua. Per altra banda, el Lopes ha aconseguit una prova per ser el nou presentador del programa musical de televisió Sputnik . Els amics li insinuen que és una mica calb i s'acaba obsessionant de tal manera que se'n va a fer la prova amb una perruca . Quan el Lopes va a fer la prova per l' Sputnik , hi ha present la presentadora vertadera del programa, la Tània Sàrrias . Al final de l'episodi, el Lopes acudeix a una associació de calbs presidida per en Tomàs Molina .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-3x02-01",
+    "wq-3x02-02",
+    "wq-3x02-03",
+    "wq-3x02-04",
+    "wq-3x02-05",
+    "wq-3x02-06",
+    "wq-3x02-07",
+    "wq-3x02-08",
+    "wq-3x02-09",
+    "wq-3x02-10",
+    "wq-3x02-11",
+    "wq-3x02-12",
+    "wq-3x02-13",
+    "wq-3x02-14"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

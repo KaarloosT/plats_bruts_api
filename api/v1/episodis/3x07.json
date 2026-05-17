@@ -6,8 +6,18 @@
   "sinopsi": "El David ha començat a sortir amb la Marina però els amics no entenen com una noia tan maca i intel·ligent pot sortir amb ell. El David començar a dubtar de la relació i el Lopes el convenç que la Marina surt amb ell per tractar-lo com a home objecte, de manera que decideix passar-se tota l'estona fent peses i no parlar gaire. La Marina no entén res i al final acaben discutint perquè el David segueix els consells dolents que li dona el Lopes. Mentrestant, el Pol ha de marxar durant uns dies perquè s'ha d'operar de fimosi i li demana a l'Emma que s'encarregui del bar . Ell se sent molt avergonyit per l' operació i li comenta a l'Emma que expliqui que ha marxat per assumptes personals. Quan el Pol marxa, l'Emma és incapaç de mantenir gaire estona el secret i ràpidament els explica als altres el perquè de la seva absència.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-3x07-01",
+    "wq-3x07-02",
+    "wq-3x07-03",
+    "wq-3x07-04",
+    "wq-3x07-05"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

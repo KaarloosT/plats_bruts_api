@@ -6,8 +6,19 @@
   "sinopsi": "El David i el Lopes han tornat a discutir i ja n'estan farts l'un de l'altre, de manera que decideixen separar-se. El Lopes se'n va del pis i s'instal·la en un altre molt petit, però tot i això, no pot pagar el lloguer tot sol i troba un company que és clavat a ell, el Gómez. Per altra banda, la iaia troba a faltar el Lopes, de manera que el David també busca un nou company i troba el Daniel, que també és el seu doble. Després de passar una nit amb els respectius nous companys, ja no s'aguanten i decideixen intercanviar-se'ls per provar. Ara tots estan bé, però resulta que el Daniel i el Gómez ja es coneixien de fa temps i com qui no vol la cosa, s'acaben instal·lant junts i el David ha de tornar a viure amb el Lopes. Per altra banda, al Stasky tothom li pregunta si el seu nom ve de la sèrie Starsky i Hutch però ell, que no la coneix, ja n'està fart que li preguntin.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "david-guell-i-sobirana",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x11-01",
+    "wq-5x11-02",
+    "wq-5x11-03",
+    "wq-5x11-04",
+    "wq-5x11-05"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

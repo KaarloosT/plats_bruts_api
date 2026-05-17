@@ -6,8 +6,14 @@
   "sinopsi": "La Marina convida al David a una important expedició per estudiar un tipus de peix del Mediterrani , i aquest accepta la proposta per no decebre-la. El problema és que el David té pànic a l'aigua i no sap nedar. Desobeint els consells de la Carbonell, assisteix a l'expedició, però quan arriba el moment de bussejar , li entra la por i s'inventa diverses excuses per no llançar-se a l'aigua. Després de diversos intents, decideix tirar-se a terra per fer veure que s'ha quedat paraplègic i han de suspendre l'expedició. Per altra banda, l'Emma ha trobat una nova feina, cobradora del frac, i el seu primer morós a seguir és el Lopes perquè no ha pagat un dels crèdits que té demanats. L'Emma el segueix a tot arreu i el Lopes comença a tornar-se boig a causa de l'estrès que li provoca l'Emma.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-3x09-01",
+    "wq-3x09-02"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

@@ -6,8 +6,28 @@
   "sinopsi": "El David agafa un refredat molt estrany, i com que no es refia del metge del \" seguro \", reclama els serveis d'un especialista privat molt car que li demana que es faci diverses anàlisis . Com que no saben què té, l'ingressen a l' hospital per fer-li més proves i operar-lo del que faci falta. L'Emma és una enemiga aferrissada dels telèfons mòbils i els amics decideixen fer-li una broma per demostrar la seva hipocresia . Així que li regalen un telèfon mòbil i ella sucumbeix a la temptació i acaba enganxada de mala manera. Al final de l'episodi hi ha una paròdia sobre la sèrie catalana \" Poblenou \", quan apareixen els actors que interpretaven els pares del David en aquesta sèrie, ja que també havia estat ingressat a l'hospital durant alguns episodis.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-2x11-01",
+    "wq-2x11-02",
+    "wq-2x11-03",
+    "wq-2x11-04",
+    "wq-2x11-05",
+    "wq-2x11-06",
+    "wq-2x11-07",
+    "wq-2x11-08",
+    "wq-2x11-09",
+    "wq-2x11-10",
+    "wq-2x11-11",
+    "wq-2x11-12",
+    "wq-2x11-13",
+    "wq-2x11-14"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

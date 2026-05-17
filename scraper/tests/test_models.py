@@ -23,6 +23,7 @@ def test_personatge_to_dict():
         "primera_aparicio": "1x01",
         "imatge": "https://example.com/lofi.jpg",
         "font_wikipedia": "https://ca.wikipedia.org/wiki/Plats_bruts",
+        "cites": [],
     }
 
 
@@ -53,6 +54,8 @@ def test_temporada_to_dict():
         "any_fi": 1999,
         "num_episodis": 2,
         "episodis": ["1x01", "1x02"],
+        "audiencia_mitjana": None,
+        "quota_audiencia": None,
     }
 
 

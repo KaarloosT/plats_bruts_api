@@ -6,8 +6,28 @@
   "sinopsi": "Els nois comencen a estar farts de l' optimisme que desprèn l'Emma i han decidit obrir-li els ulls perquè vegi que la vida no és tan bonica com ella es pensa. Primer intenten parlar amb ella però l'Emma passa d'ells i a més, s'encapritxa d'un canari que hi ha vingut volant, al qual anomena Marujito. Com que el diàleg no ha funcionat, decideixen alliberar el Marujito d'amagat. En veure que el Marujito s'ha escapat, l'Emma s'ensorra totalment i comença a beure whisky per oblidar les penes. Per altra banda, la Mercedes ha de marxar uns dies a París i ha de deixar la ràdio a càrrec del Ramon perquè el Lopes és de vacances. Com que se sent sol, el Ramon convida la iaia perquè li faci companyia. Passen els dies i la iaia també convida els seus amics, de manera que la l'emissora sembla un casal d'avis i el Ramon no pot treballar bé.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "david-guell-i-sobirana",
+    "iaia-asunsion",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x06-01",
+    "wq-5x06-02",
+    "wq-5x06-03",
+    "wq-5x06-04",
+    "wq-5x06-05",
+    "wq-5x06-06",
+    "wq-5x06-07",
+    "wq-5x06-08",
+    "wq-5x06-09",
+    "wq-5x06-10",
+    "wq-5x06-11",
+    "wq-5x06-12",
+    "wq-5x06-13"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

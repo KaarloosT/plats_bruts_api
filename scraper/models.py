@@ -22,6 +22,7 @@ class Personatge:
     primera_aparicio: Optional[str] = None
     imatge: Optional[str] = None
     font_wikipedia: Optional[str] = None
+    cites: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict:
         return {
@@ -34,6 +35,7 @@ class Personatge:
             "primera_aparicio": self.primera_aparicio,
             "imatge": self.imatge,
             "font_wikipedia": self.font_wikipedia,
+            "cites": list(self.cites),
         }
 
     def index_entry(self) -> dict:
@@ -91,6 +93,8 @@ class Temporada:
     any_fi: Optional[int] = None
     num_episodis: int = 0
     episodis: list[str] = field(default_factory=list)
+    audiencia_mitjana: Optional[int] = None
+    quota_audiencia: Optional[float] = None
 
     def to_dict(self) -> dict:
         return {
@@ -99,6 +103,8 @@ class Temporada:
             "any_fi": self.any_fi,
             "num_episodis": self.num_episodis,
             "episodis": list(self.episodis),
+            "audiencia_mitjana": self.audiencia_mitjana,
+            "quota_audiencia": self.quota_audiencia,
         }
 
     def index_entry(self) -> dict:

@@ -6,8 +6,36 @@
   "sinopsi": "El Pol vol dinamitzar el Cafè Maurici i prepara una sèrie d'actuacions. El David es queda de pedra quan descobreix que el Pol li ha plagiat un monòleg que ell volia representar. El pitjor de tot és que el Pol triomfa i ningú creu al David quan reivindica la seva autoria. Per altra banda, la Carbonell i el Lopes pateixen un accident de trànsit i s'obsessionen amb la idea que la mort els pot sorprendre en qualsevol moment, de manera que la Carbonell comença a fer totes les gestions per preparar la seva mort i l' enterrament , i el Lopes comença a realitzar totes les activitats que li queden per gaudir de la vida i així viure al límit, carpe diem . Al principi de l'episodi apareix el pallasso Marcel Gros fent un petit monòleg. Durant l'episodi, el Pol és convidat al programa \" La Cosa Nostra \" on és entrevistat per l' Andreu Buenafuente .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-2x07-01",
+    "wq-2x07-02",
+    "wq-2x07-03",
+    "wq-2x07-04",
+    "wq-2x07-05",
+    "wq-2x07-06",
+    "wq-2x07-07",
+    "wq-2x07-08",
+    "wq-2x07-09",
+    "wq-2x07-10",
+    "wq-2x07-11",
+    "wq-2x07-12",
+    "wq-2x07-13",
+    "wq-2x07-14",
+    "wq-2x07-15",
+    "wq-2x07-16",
+    "wq-2x07-17",
+    "wq-2x07-18",
+    "wq-2x07-19",
+    "wq-2x07-20",
+    "wq-2x07-21"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

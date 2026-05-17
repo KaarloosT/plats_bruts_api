@@ -6,8 +6,30 @@
   "sinopsi": "El David ha estat seleccionat per actuar en una obra de teatre alternativa. Mentrestant, al Lopes li ha tocat un premi de 3 milions al sorteig de la ONCE però no sap en què gastar-los. Inicialment, tothom li suggereix que aprofiti per liquidar els crèdits que té demanats però el David el convenç perquè inverteixi els diners en teatre alternatiu, principalment en el muntatge on està treballant ell ja que necessiten diners per tirar-lo endavant. El Lopes accedeix a veure una representació abans d'acceptar la proposta, però poc a poc hi va introduint canvis perquè no li agrada prou. Per altra banda, el Ramon s'ha posat malalt i se n'ha anat a casa dels nois perquè la iaia el cuidi. Allà es comença a recuperar però ell vol seguir malalt durant molt temps perquè és feliç, de manera que intenta posar-se malalt un altre cop amb l'ajuda de l'Emma. El director de l'obre de teatre és l' Àlex Rigola .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "david-guell-i-sobirana",
+    "iaia-asunsion",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x05-01",
+    "wq-5x05-02",
+    "wq-5x05-03",
+    "wq-5x05-04",
+    "wq-5x05-05",
+    "wq-5x05-06",
+    "wq-5x05-07",
+    "wq-5x05-08",
+    "wq-5x05-09",
+    "wq-5x05-10",
+    "wq-5x05-11",
+    "wq-5x05-12",
+    "wq-5x05-13",
+    "wq-5x05-14",
+    "wq-5x05-15"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

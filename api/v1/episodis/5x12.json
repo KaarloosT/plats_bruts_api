@@ -6,8 +6,16 @@
   "sinopsi": "Episodi especial en forma de musical , on els protagonistes canten diverses cançons amb lletres escrites especialment per la sèrie. Han arribat les vacances d'estiu i el David se'n va a la platja a lligar. El Lopes no té vacances però la Mercedes vol muntar un stand de Ràdio Bofarull a la platja així aprofitar per prendre el sol, de manera que el Lopes i el Ramon també van a la platja però a treballar. Per altra banda, l'Stasky munta una guingueta a la platja, el «Maurici Bitch», per guanyar molts diners estafant els \"guiris\" i l'Emma també hi anirà a vendre cocos robats. Tots situats a la platja de la Barceloneta , el David es fa passar per un socorrista per lligar amb una noia que té un germà petit molt pesat. El Ramon i el Lopes aprofiten l'absència de la Mercedes per punxar una cançó molt llarga per abandonar l' stand mentre se'n van a lligar gràcies a uns tangues que té el Ramon. Mentrestant, l'Emma té problemes amb un policia que la vigila perquè no té el permís de venda ambulant.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x12-01",
+    "wq-5x12-02",
+    "wq-5x12-03"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

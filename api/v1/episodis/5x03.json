@@ -6,8 +6,34 @@
   "sinopsi": "El Lopes ha acceptat l'encàrrec de fer de \"negre\" d'en Quim Monzó per escriure-li uns contes . Per la seva part, el David ha decidit fer de director de cinema i rodar una pel·lícula però abans necessita escriure un guió . Així doncs, els dos es troben a casa per escriure les seves idees però no se'ls acut res. Davant la falta d'idees, el David decideix rodar la pel·lícula sense guió i contracta els seus companys de l' Institut del Teatre , però com que no els dona guió ni cap referència sobre els personatges, els companys no saben què fer i se'n van. Després ho prova amb l'Emma i la iaia, però tampoc funciona i finalment decideix filmar paisatges. Mentrestant, al Lopes li ha vingut la inspiració mentre era a la ràdio i escriu els contes en hores de feina. Després d'entregar els contes, el Monzó bat records de vendes amb els contes publicats i el Lopes, una mica envejós, li confessa a la Mercedes que ell és el \"negre\" del Monzó. La Mercedes convida el Monzó a Ràdio Bofarull per entrevistar-lo i li prepara un parany perquè confessi, però de sobte, apareix el Sergi Pàmies per acusar al Monzó de plagi . Encara s'enreda més tot quan el Lopes diu que és el secretari del Monzó i confessa que va copiar els contes de la Maria de la Pau Janer .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "david-guell-i-sobirana",
+    "iaia-asunsion",
+    "josep-lopes",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x03-01",
+    "wq-5x03-02",
+    "wq-5x03-03",
+    "wq-5x03-04",
+    "wq-5x03-05",
+    "wq-5x03-06",
+    "wq-5x03-07",
+    "wq-5x03-08",
+    "wq-5x03-09",
+    "wq-5x03-10",
+    "wq-5x03-11",
+    "wq-5x03-12",
+    "wq-5x03-13",
+    "wq-5x03-14",
+    "wq-5x03-15",
+    "wq-5x03-16",
+    "wq-5x03-17",
+    "wq-5x03-18"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

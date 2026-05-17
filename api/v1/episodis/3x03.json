@@ -6,8 +6,28 @@
   "sinopsi": "L'Oriol i la Carbonell s'han separat a causa de la rutina i ella ha decidit tornar a Barcelona . El Lopes s'assabenta que el seu pare va heretar fa temps unes 5.000 hectàrees de terres, però l'Oriol, en lloc de vendre-les i ser rics, va decidir mantenir-les verges com a reserva natural perquè els animals poguessin viure en llibertat. El David veu l'oportunitat de fer-se ric així que intenta convèncer a la Carbonell que tramiti el divorci per compartir els béns de l'Oriol. Així que per culpa del Lopes i el David, l'Oriol i la Carbonell s'acaben denunciant mútuament i se citen a un judici. Per altra banda, el Ramon intenta demostrar que és amic de tota la vida d'en Sergi Barjuan però els altres no el creuen. Els amics munten un sopar i burxen al Ramon perquè convidi al Sergi. Finalment el convenç i queden per sopar al Cafè Maurici però arriba molt tard i els altres ja han marxat tots.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-3x03-01",
+    "wq-3x03-02",
+    "wq-3x03-03",
+    "wq-3x03-04",
+    "wq-3x03-05",
+    "wq-3x03-06",
+    "wq-3x03-07",
+    "wq-3x03-08",
+    "wq-3x03-09",
+    "wq-3x03-10",
+    "wq-3x03-11",
+    "wq-3x03-12"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

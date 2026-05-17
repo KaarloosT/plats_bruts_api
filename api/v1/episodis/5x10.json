@@ -6,8 +6,25 @@
   "sinopsi": "El David ha descobert la figura de Jesucrist i, mentre la iaia li explica detalls de la seva vida, comença a veure moltes similituds i paral·lelismes entre ell i Jesucrist. Per altra banda, una amiga del Lopes ha vingut a visitar Barcelona i ell li fa de guia turístic . El Lopes li presenta la Lucy al David i ambdós senten una atracció física mútua. El problema és que David ara se sent molt identificat amb Jesús i percep aquesta noia com una temptació del dimoni . Per tal d'evitar aquestes temptacions, el David s'haurà d'enfrontar a la Lucy per reforçar la seva fe i vèncer el diable .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "david-guell-i-sobirana",
+    "iaia-asunsion",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora",
+    "stasky"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-5x10-01",
+    "wq-5x10-02",
+    "wq-5x10-03",
+    "wq-5x10-04",
+    "wq-5x10-05",
+    "wq-5x10-06",
+    "wq-5x10-07",
+    "wq-5x10-08",
+    "wq-5x10-09",
+    "wq-5x10-10"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

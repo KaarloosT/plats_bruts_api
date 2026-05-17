@@ -282,3 +282,59 @@ def _parse_catalan_date(text: str) -> str | None:
     if not month:
         return None
     return f"{int(year):04d}-{month:02d}-{int(day):02d}"
+
+
+# Regex to extract audience numbers like "846.000" → 846000
+_AUDIENCE_NUM_RE = re.compile(r"(\d{1,3}(?:[.\s]\d{3})+)")
+# Regex to extract percentages like "32,8%" → 32.8
+_PERCENT_RE = re.compile(r"(\d+[,.]\d+)\s*%")
+
+
+def parse_temporades_summary(html: str) -> dict[int, dict]:
+    """Parse the season summary table from the main 'Plats bruts' Wikipedia article.
+
+    The article has a wikitable right under the <h2 id="Personatges"> heading
+    (despite the misleading anchor; the table is the season-summary, not a
+    character table). Columns are: Temporada | Episodis | Estrena | Final |
+    Audiència (espectadors) | Quota d'Audiència.
+
+    Returns a dict mapping temporada number → {audiencia_mitjana, quota_audiencia}.
+    Returns an empty dict if the table can't be located.
+    """
+    soup = BeautifulSoup(html, "lxml")
+    # The summary table appears after <h2 id="Personatges"> on the main article
+    anchor = soup.find("h2", id="Personatges")
+    if anchor is None:
+        return {}
+    table = anchor.find_next("table", class_="wikitable")
+    if table is None:
+        return {}
+    tbody = table.find("tbody") or table
+
+    out: dict[int, dict] = {}
+    for row in tbody.find_all("tr")[1:]:  # skip header
+        cells = row.find_all(["td", "th"])
+        if len(cells) < 6:
+            continue
+        # Two known layouts:
+        #   6 cells: [season, episodis, estrena, final, audiencia, quota]
+        #   7 cells: [swatch, season, episodis, estrena, final, audiencia, quota]
+        # The season cell is the one with a single-digit value (1-9).
+        season_idx = None
+        for i in (0, 1):
+            txt = cells[i].get_text(strip=True)
+            if txt.isdigit() and 1 <= int(txt) <= 9:
+                season_idx = i
+                break
+        if season_idx is None:
+            continue
+        numero = int(cells[season_idx].get_text(strip=True))
+        # Audience and quota are the LAST two cells in the row (robust to swatch presence)
+        aud_text = cells[-2].get_text(strip=True)
+        qua_text = cells[-1].get_text(strip=True)
+        aud_m = _AUDIENCE_NUM_RE.search(aud_text)
+        qua_m = _PERCENT_RE.search(qua_text)
+        audiencia = int(re.sub(r"[.\s]", "", aud_m.group(1))) if aud_m else None
+        quota = float(qua_m.group(1).replace(",", ".")) if qua_m else None
+        out[numero] = {"audiencia_mitjana": audiencia, "quota_audiencia": quota}
+    return out

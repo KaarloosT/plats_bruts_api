@@ -6,8 +6,21 @@
   "sinopsi": "Un important professor estranger a vingut a fer un seminari a l' Institut del Teatre però els seus mètodes d'ensenyament són una mica controvertits. El David el troba genial i el comença a imitar, en canvi, al Pol li cau fatal i fins i tot l'insulta. Per altra banda, el Lopes ha trobat el diari personal de l'Emma i el comença a llegir juntament amb la Carbonell. L'Emma inicia una cerca desesperada i com que no el troba, comença a penjar cartells avisant de la seva perillositat en cas de llegir-lo. La Carbonell i el Lopes, encuriosits, li pregunten a l'Emma sobre aquest perill i ella els explica que les pàgines del diari tenen un verí mortal, com la novel·la \" El nom de la rosa \" d' Umberto Eco .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "josep-lopes",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-4x05-01",
+    "wq-4x05-02",
+    "wq-4x05-03",
+    "wq-4x05-04",
+    "wq-4x05-05",
+    "wq-4x05-06"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

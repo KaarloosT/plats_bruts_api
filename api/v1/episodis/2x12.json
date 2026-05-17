@@ -6,8 +6,24 @@
   "sinopsi": "Un assassí en sèrie que ha començat a matar gent al barri de l' Eixample ja ha assassinat tres persones. El Lopes comença a prendre mesures de seguretat perquè s'adona que cada vegada mata més a prop de casa i la Carbonell descobreix el mètode per escollir les víctimes, l'ordre alfabètic . Aquests indicis porten a pensar que la pròxima víctima pot ser el David. La policia els ve a visitar i els dona una descripció i un retrat robot de l'assassí. Amb aquestes pistes, el David creu que l'Emma és la culpable i convenç al Lopes i a la Carbonell per pujar al pis de l'Emma a investigar. Allà es troben el revisor del gas mort a l'armari, però l'Emma els demostra que no és l'assassina. Per la seva banda, el Ramon demostra al Pol i a la Mercedes que és karateka cinturó negre, de manera que els entrena per poder-se defensar si es troben l'assassí.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-2x12-01",
+    "wq-2x12-02",
+    "wq-2x12-03",
+    "wq-2x12-04",
+    "wq-2x12-05",
+    "wq-2x12-06",
+    "wq-2x12-07",
+    "wq-2x12-08",
+    "wq-2x12-09",
+    "wq-2x12-10"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

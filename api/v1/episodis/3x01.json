@@ -6,8 +6,33 @@
   "sinopsi": "La Carbonell i l'Oriol se n'han anat a viure a Porrera a fer vida de casats. Des que la Carbonell va marxar, el David s'ha quedat sense assistenta i està experimentant el fet d'haver-se d'espavilar a fer les coses tot sol. El David es rendeix i intenta buscar una nova assistenta. Quan el Lopes s'assabenta el David pagava 300.000 ptes a la Carbonell, s'ofereix voluntàriament a ser la nova dona de fer feines. El Lopes fa tota la feina de forma impecable però després d'uns quants dies, el David troba a faltar el Lopes com a amic. Per altra banda, el Pol està molt tou i susceptible per qualsevol cosa que li diuen. La resta d'amics intenten tractar-lo amb molt afecte però sense voler encara el fereixen més perquè és massa sensible. Finalment cau en una depressió molt greu i intenta suïcidar-se .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-3x01-01",
+    "wq-3x01-02",
+    "wq-3x01-03",
+    "wq-3x01-04",
+    "wq-3x01-05",
+    "wq-3x01-06",
+    "wq-3x01-07",
+    "wq-3x01-08",
+    "wq-3x01-09",
+    "wq-3x01-10",
+    "wq-3x01-11",
+    "wq-3x01-12",
+    "wq-3x01-13",
+    "wq-3x01-14",
+    "wq-3x01-15",
+    "wq-3x01-16",
+    "wq-3x01-17"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

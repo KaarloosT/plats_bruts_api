@@ -6,8 +6,12 @@
   "sinopsi": "El David està desesperat perquè no lliga, fins que s'adona que té possibilitats amb l'Emma, però el Lopes també hi està interessat. Així que acorden fer un pacte de no-agressió: cap dels dos intentarà lligar-se l'Emma i, per evitar temptacions, han d'estar sempre junts per veure-la. Malgrat el pacte, ambdós aconsegueixen quedar amb l'Emma per tenir relacions sexuals però ella no s'adona que ha quedat a la mateixa hora amb tots dos. L'Emma intenta escollir-ne un dels dos però és incapaç ja que li agraden tots dos. Mentrestant, la Carbonell ha creat una agència de viatges i ha organitzat un viatge per passar les vacances a la bonica població marroquina de Benimamalah, de manera que tempta el Pol, la Mercedes, el Ramon i la Rosa que acaben acceptant l'oferta sense saber que es trobaran tots a l' autobús per marxar junts.",
   "data_emissio": "1999-07-19",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "pol-requena"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x13-01"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

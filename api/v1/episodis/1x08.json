@@ -6,8 +6,27 @@
   "sinopsi": "El David rep una carta del Ministeri de Defensa on se li comunica que se li han acabat les pròrrogues i ha d'anar a fer la \" mili \" aquesta mateixa setmana. Tot i que inicialment no està disposat a anar-hi, fins i tot es disfressa de dona per evitar-ho, l'acaben convencent que és millor que s'hi presenti. Per la seva banda el Ramon, aprofitant que la seva dona ha de marxar uns quants dies, enganya el Lopes assegurant que s'ha separat de la seva dona i li demana que li llogui l'habitació del David per uns dies mentre aquest compleix els seus deures amb la pàtria . Després de la primera nit el David es presenta a casa dient que l' exèrcit l'ha declarat inútil total perquè li suen les mans.",
   "data_emissio": "1999-06-14",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x08-01",
+    "wq-1x08-02",
+    "wq-1x08-03",
+    "wq-1x08-04",
+    "wq-1x08-05",
+    "wq-1x08-06",
+    "wq-1x08-07",
+    "wq-1x08-08",
+    "wq-1x08-09",
+    "wq-1x08-10",
+    "wq-1x08-11",
+    "wq-1x08-12"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

@@ -6,8 +6,24 @@
   "sinopsi": "El David ha començat a sortir amb la Lola però s'ha enamorat de la seva amiga, la Marina. Per tal de tallar amb ella, el David prepara un sopar romàntic perquè la Marina i el Lopes es coneguin però el propòsit real és que el Lopes li tregui la xicota al David i així aquest tingui via lliure per sortir amb la Marina. El sopar acaba en desastre, i el Lopes s'ofereix per convèncer a la Lola que el David és un mal noi, però es torna a equivocar i parla amb la Marina. Per altra banda, l'Emma descobreix l'origen nobiliari del seu cognom, que no és altre de l' hereva més directa de Martí l'Humà , és a dir, en cas d'una monarquia catalana, ella en seria la reina . Durant un moment de l'episodi, quan en David es declara a la Marina, es du a terme una paròdia de Terra Baixa .",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-3x06-01",
+    "wq-3x06-02",
+    "wq-3x06-03",
+    "wq-3x06-04",
+    "wq-3x06-05",
+    "wq-3x06-06",
+    "wq-3x06-07",
+    "wq-3x06-08",
+    "wq-3x06-09"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

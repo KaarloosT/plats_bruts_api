@@ -6,8 +6,18 @@
   "sinopsi": "Ara que els seus pares s'han separat, el David ha de suportar que el seu pare convisqui amb ell i el continuï tractant com un nen petit. Fart del seu pare, intenta que es tornin a reconciliar per treure-se'l de sobre, de manera que munta una sessió de teràpia a l'Institut del Teatre pels seus pares on un professor es fa passar per psicòleg . Per altra banda, el Lopes ha llogat una plaça d'aparcament a Pedralbes , encara que no hi viu, no té cotxe, i tampoc el carnet de conduir . El Lopes comença a estudiar el temari però és massa per a ell, de manera que la Carbonell li passa el contacte d'un militar corrupte del sud d' Espanya que ven carnets de conduir per 100.000 pessetes . El Ramon aprofita per enganya-lo i li ven el seu \" Seat 131 Supermirafiori\" per 350.000 ptes, una carraca que no sabia com treure's de sobre.",
   "data_emissio": "1999-07-12",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "pol-requena"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x12-01",
+    "wq-1x12-02",
+    "wq-1x12-03",
+    "wq-1x12-04",
+    "wq-1x12-05"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

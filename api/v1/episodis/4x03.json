@@ -6,8 +6,23 @@
   "sinopsi": "El David ha llegit que el Leonardo DiCaprio fa moltes activitats, de manera que creu que per estar a la seva alçada ha d'estudiar i fer tot el que ha fet ell i així podrà triomfar. Seguidament s'apunta a classes de mim , esgrima , claqué , baix , cant , dansa contemporània , culturisme i malabarisme . Mentrestant, el Pol li proposa al David que l'ajudi a fer un treball de teatre, i ell accepta, però com que té tota la setmana ocupada i va de cul, no arriba mai a temps i sempre el deixa penjat. Per altra banda, el Lopes ha decidit donar-se un capritx, comprar-se un flam . Per ell, menjar-se un flam és com un ritual , de manera que el compra i el desa a la nevera per cruspir-se'l en el moment més idoni. Després d'uns dies, l'Emma se'l menja d'amagat i el Lopes munta un sarau per descobrir qui se l'ha menjat.",
   "data_emissio": null,
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "josep-lopes",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-4x03-01",
+    "wq-4x03-02",
+    "wq-4x03-03",
+    "wq-4x03-04",
+    "wq-4x03-05",
+    "wq-4x03-06",
+    "wq-4x03-07",
+    "wq-4x03-08"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

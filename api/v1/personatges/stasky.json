@@ -10,5 +10,19 @@
   "temporades": [],
   "primera_aparicio": null,
   "imatge": "https://kaarloost.github.io/plats_bruts_api/assets/personatges/stasky.jpg",
-  "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts"
+  "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_de_personatges_de_Plats_bruts",
+  "cites": [
+    "wq-5x01-20",
+    "wq-5x02-18",
+    "wq-5x03-17",
+    "wq-5x04-16",
+    "wq-5x05-14",
+    "wq-5x06-12",
+    "wq-5x07-11",
+    "wq-5x08-11",
+    "wq-5x09-10",
+    "wq-5x10-09",
+    "wq-5x11-04",
+    "wq-5x12-02"
+  ]
 }

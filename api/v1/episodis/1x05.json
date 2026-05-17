@@ -6,8 +6,36 @@
   "sinopsi": "En un moment de debilitat, el Pol i l'Emma s'acaben enrotllant. L'endemà, el Pol no té gaire clar aquest canvi d'orientació sexual i va a veure el psicoanalista perquè l'ajudi a superar aquesta crisi, a més, el David s'enfada perquè no pot acceptar que el Pol hagi traït els seus principis. Per altra banda, al Lopes li encarreguen conduir un programa sobre sexe, però és tan poc el que sap sobre el tema que ha de llogar la Carbonell de negre perquè li escrigui els guions . El programa de ràdio té molt èxit i li cauen ofertes milionàries de tot arreu, fins i tot del Gabilondo .",
   "data_emissio": "1999-05-17",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "emma-cruscat-de-palausabullabellobach-i-gonzalez",
+    "josep-lopes",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x05-01",
+    "wq-1x05-02",
+    "wq-1x05-03",
+    "wq-1x05-04",
+    "wq-1x05-05",
+    "wq-1x05-06",
+    "wq-1x05-07",
+    "wq-1x05-08",
+    "wq-1x05-09",
+    "wq-1x05-10",
+    "wq-1x05-11",
+    "wq-1x05-12",
+    "wq-1x05-13",
+    "wq-1x05-14",
+    "wq-1x05-15",
+    "wq-1x05-16",
+    "wq-1x05-17",
+    "wq-1x05-18",
+    "wq-1x05-19"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }

@@ -6,8 +6,32 @@
   "sinopsi": "De cop i volta apareix el pare del Lopes, l'Oriol, un hippie que fa de professor a Porrera . Allà s'ha quedat sense feina perquè ja no hi ha nens i ha vingut a demanar un milió de pessetes al Lopes perquè vol reformar la masia i convertir-la en una granja d'agro-turisme. El Lopes li diu que no perquè arriba just a final de mes, però l'amistat que agafen el David i l'Oriol el fa sentir culpable. El David, l'Oriol i l'Alba (una amiga del David) comencen a fer performances a La Rambla però l'Oriol acaba a la presó per resistència a l'autoritat. El Lopes s'enfada molt i l'obliga a buscar feina, de manera que l'Oriol comença a treballar de venedor d' enciclopèdies amb una imatge totalment diferent.",
   "data_emissio": "1999-05-31",
   "duracio_min": null,
-  "personatges": [],
+  "personatges": [
+    "conxita-carbonell",
+    "david-guell-i-sobirana",
+    "josep-lopes",
+    "maria-de-las-mercedes-de-simancas-i-murrieta",
+    "pol-requena",
+    "ramon-zamora"
+  ],
   "localitzacions": [],
-  "cites": [],
+  "cites": [
+    "wq-1x06-01",
+    "wq-1x06-02",
+    "wq-1x06-03",
+    "wq-1x06-04",
+    "wq-1x06-05",
+    "wq-1x06-06",
+    "wq-1x06-07",
+    "wq-1x06-08",
+    "wq-1x06-09",
+    "wq-1x06-10",
+    "wq-1x06-11",
+    "wq-1x06-12",
+    "wq-1x06-13",
+    "wq-1x06-14",
+    "wq-1x06-15",
+    "wq-1x06-16"
+  ],
   "font_wikipedia": "https://ca.wikipedia.org/wiki/Llista_d%27episodis_de_Plats_bruts"
 }
