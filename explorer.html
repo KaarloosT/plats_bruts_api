@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Plats Bruts API · Explorador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <style>
+    :root { --accent: #c41e3a; --bg: #fafafa; --card-bg: #fff; --border: #e2e2e2; --muted: #666; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 0; background: var(--bg); color: #222; }
+    header { background: #fff; border-bottom: 3px solid var(--accent); padding: 1.5rem 2rem; display: flex; align-items: center; gap: 1.5rem; }
+    header img { height: 70px; }
+    header h1 { margin: 0; font-size: 1.6rem; }
+    header p { margin: 0.2rem 0 0; color: var(--muted); font-size: 0.9rem; }
+    nav.tabs { background: #fff; border-bottom: 1px solid var(--border); padding: 0 2rem; display: flex; gap: 0.3rem; overflow-x: auto; }
+    nav.tabs button { background: none; border: 0; padding: 0.9rem 1.2rem; font-size: 0.95rem; font-weight: 500; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; }
+    nav.tabs button:hover { color: #222; }
+    nav.tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
+    main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .panel { display: none; }
+    .panel.active { display: block; }
+    h2 { margin-top: 0; }
+
+    /* Personatges grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+    .card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .card .photo { width: 100%; height: 200px; background: #ddd center/cover no-repeat; display: flex; align-items: center; justify-content: center; font-size: 3rem; color: #aaa; }
+    .card .name { padding: 0.7rem; font-weight: 600; text-align: center; }
+    .card .actor { padding: 0 0.7rem 0.7rem; font-size: 0.8rem; color: var(--muted); text-align: center; }
+
+    /* Episodes list */
+    .season { background: #fff; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 1rem; padding: 1rem 1.2rem; }
+    .season h3 { margin: 0 0 0.5rem; display: flex; justify-content: space-between; align-items: baseline; }
+    .season .audience { font-weight: normal; font-size: 0.85rem; color: var(--muted); }
+    .episode-row { display: grid; grid-template-columns: 60px 1fr 110px; gap: 1rem; padding: 0.5rem 0; border-top: 1px solid var(--border); cursor: pointer; align-items: baseline; }
+    .episode-row:hover { background: #f8f8f8; }
+    .episode-row .id { font-family: monospace; color: var(--muted); font-size: 0.9rem; }
+    .episode-row .title { font-weight: 500; }
+    .episode-row .date { color: var(--muted); font-size: 0.85rem; text-align: right; }
+
+    /* Cite display */
+    .cite-box { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; max-width: 700px; margin: 0 auto; }
+    .cite-box pre { white-space: pre-wrap; font-family: inherit; font-size: 1.05rem; line-height: 1.6; margin: 0; }
+    .cite-box .meta { margin-top: 1rem; color: var(--muted); font-size: 0.9rem; }
+    .btn { display: inline-block; background: var(--accent); color: #fff; padding: 0.5rem 1.2rem; border: 0; border-radius: 4px; cursor: pointer; font-size: 0.95rem; }
+    .btn:hover { opacity: 0.9; }
+
+    /* Modal */
+    .modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,0.6); display: none; align-items: flex-start; justify-content: center; padding: 2rem 1rem; z-index: 100; overflow-y: auto; }
+    .modal-bg.open { display: flex; }
+    .modal { background: #fff; max-width: 700px; width: 100%; border-radius: 8px; padding: 2rem; max-height: 90vh; overflow-y: auto; }
+    .modal h2 { margin-top: 0; display: flex; justify-content: space-between; align-items: center; }
+    .modal img.portrait { float: right; max-width: 180px; margin-left: 1rem; border-radius: 4px; }
+    .close { background: none; border: 0; font-size: 1.5rem; cursor: pointer; color: var(--muted); }
+    .pills { margin-top: 0.5rem; }
+    .pill { display: inline-block; background: #f0f0f0; padding: 0.15rem 0.6rem; border-radius: 999px; font-size: 0.8rem; margin: 0.1rem; }
+
+    /* Temporades */
+    .temp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .temp { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 1rem; }
+    .temp h3 { margin: 0; }
+    .temp .stat { display: flex; justify-content: space-between; margin-top: 0.4rem; font-size: 0.9rem; }
+    .temp .label { color: var(--muted); }
+
+    .loading { color: var(--muted); padding: 2rem; text-align: center; }
+    footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo.png" alt="Plats Bruts">
+  <div>
+    <h1>Plats Bruts · Explorador</h1>
+    <p>Demo de l'API <a href="/">plats_bruts_api</a> consumida en directe</p>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button data-tab="personatges" class="active">Personatges</button>
+  <button data-tab="episodis">Episodis</button>
+  <button data-tab="cites">Cite aleatòria</button>
+  <button data-tab="temporades">Temporades</button>
+</nav>
+
+<main>
+  <section id="personatges" class="panel active">
+    <h2>Personatges</h2>
+    <div id="grid-personatges" class="grid"><div class="loading">Carregant…</div></div>
+  </section>
+
+  <section id="episodis" class="panel">
+    <h2>Episodis</h2>
+    <div id="list-episodis"><div class="loading">Carregant…</div></div>
+  </section>
+
+  <section id="cites" class="panel">
+    <h2>Cite aleatòria</h2>
+    <div id="cite-area" class="cite-box"><div class="loading">Carregant…</div></div>
+    <p style="text-align:center;margin-top:1rem;"><button class="btn" onclick="loadRandomCite()">Una altra!</button></p>
+  </section>
+
+  <section id="temporades" class="panel">
+    <h2>Temporades</h2>
+    <div id="grid-temporades" class="temp-grid"><div class="loading">Carregant…</div></div>
+  </section>
+</main>
+
+<div id="modal-bg" class="modal-bg" onclick="if(event.target.id==='modal-bg')closeModal()">
+  <div class="modal" id="modal-content"></div>
+</div>
+
+<footer>
+  Codi a <a href="https://github.com/KaarloosT/plats_bruts_api">GitHub</a>.
+  Dades de Viquipèdia (CC BY-SA), cites de Wikiquote.
+</footer>
+
+<script>
+const BASE = "/api/v1";
+
+// State
+let personatgesIndex = null;
+let personatgesBySlug = {};
+let episodisIndex = null;
+let temporadesIndex = null;
+let citesIndex = null;
+
+// Tab switching
+document.querySelectorAll("nav.tabs button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("nav.tabs button").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.tab).classList.add("active");
+    if (btn.dataset.tab === "episodis" && !episodisIndex) loadEpisodes();
+    if (btn.dataset.tab === "cites" && !citesIndex) loadRandomCite();
+    if (btn.dataset.tab === "temporades" && !temporadesIndex) loadTemporades();
+  });
+});
+
+// Initial load: personatges
+async function loadPersonatges() {
+  const r = await fetch(`${BASE}/personatges/index.json`);
+  personatgesIndex = await r.json();
+  // Pre-fetch details for the cards (so we have actor + photo)
+  const details = await Promise.all(
+    personatgesIndex.results.map(r => fetch(`${BASE}/personatges/${r.slug}.json`).then(x => x.json()))
+  );
+  details.forEach(p => personatgesBySlug[p.slug] = p);
+  renderPersonatges(details);
+}
+
+function renderPersonatges(items) {
+  const grid = document.getElementById("grid-personatges");
+  grid.innerHTML = "";
+  items.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.onclick = () => showPersonatge(p.slug);
+    const photo = document.createElement("div");
+    photo.className = "photo";
+    if (p.imatge) {
+      photo.style.backgroundImage = `url("${p.imatge}")`;
+    } else {
+      photo.textContent = p.nom.charAt(0);
+    }
+    card.appendChild(photo);
+    const name = document.createElement("div");
+    name.className = "name";
+    name.textContent = p.nom;
+    card.appendChild(name);
+    if (p.actor) {
+      const actor = document.createElement("div");
+      actor.className = "actor";
+      actor.textContent = p.actor.nom;
+      card.appendChild(actor);
+    }
+    grid.appendChild(card);
+  });
+}
+
+async function loadEpisodes() {
+  // Load both temporades index and full episode details
+  const [tempR, epiR] = await Promise.all([
+    fetch(`${BASE}/temporades/index.json`).then(r => r.json()),
+    fetch(`${BASE}/episodis/index.json`).then(r => r.json())
+  ]);
+  // Fetch all temporada details for audience
+  const temps = await Promise.all(tempR.results.map(t => fetch(`${BASE}/temporades/${t.numero}.json`).then(r => r.json())));
+  const epis = await Promise.all(epiR.results.map(e => fetch(`${BASE}/episodis/${e.id}.json`).then(r => r.json())));
+  // Group by season
+  const bySeason = {};
+  epis.forEach(e => { (bySeason[e.temporada] ??= []).push(e); });
+  const html = temps.map(t => {
+    const episodes = (bySeason[t.numero] || []).sort((a,b) => a.numero - b.numero);
+    const audience = t.audiencia_mitjana ? `${(t.audiencia_mitjana/1000).toFixed(0)} mil espectadors · ${t.quota_audiencia}% quota` : "";
+    return `
+      <div class="season">
+        <h3>Temporada ${t.numero} <span class="audience">${audience}</span></h3>
+        ${episodes.map(e => `
+          <div class="episode-row" onclick="showEpisode('${e.id}')">
+            <div class="id">${e.id}</div>
+            <div class="title">${e.titol}</div>
+            <div class="date">${e.data_emissio || ""}</div>
+          </div>
+        `).join("")}
+      </div>`;
+  }).join("");
+  document.getElementById("list-episodis").innerHTML = html;
+}
+
+async function loadRandomCite() {
+  if (!citesIndex) {
+    const r = await fetch(`${BASE}/cites/index.json`);
+    citesIndex = await r.json();
+  }
+  const random = citesIndex.results[Math.floor(Math.random() * citesIndex.results.length)];
+  const cite = await fetch(`${BASE}/cites/${random.id}.json`).then(r => r.json());
+  // Look up personatge name if available
+  let speakerName = cite.personatge;
+  if (cite.personatge && personatgesBySlug[cite.personatge]) {
+    speakerName = personatgesBySlug[cite.personatge].nom;
+  }
+  document.getElementById("cite-area").innerHTML = `
+    <pre>${escapeHtml(cite.text)}</pre>
+    <div class="meta">
+      ${cite.episodi ? `Episodi <strong>${cite.episodi}</strong>` : ""}
+      ${speakerName && cite.personatge ? `· Primer personatge: <strong>${speakerName}</strong>` : ""}
+    </div>
+  `;
+}
+
+async function loadTemporades() {
+  const idx = await fetch(`${BASE}/temporades/index.json`).then(r => r.json());
+  const temps = await Promise.all(idx.results.map(t => fetch(`${BASE}/temporades/${t.numero}.json`).then(r => r.json())));
+  const html = temps.map(t => `
+    <div class="temp">
+      <h3>Temporada ${t.numero}</h3>
+      <div class="stat"><span class="label">Anys</span><span>${t.any_inici}${t.any_fi && t.any_fi !== t.any_inici ? '–'+t.any_fi : ''}</span></div>
+      <div class="stat"><span class="label">Episodis</span><span>${t.num_episodis}</span></div>
+      <div class="stat"><span class="label">Audiència</span><span>${t.audiencia_mitjana ? (t.audiencia_mitjana/1000).toFixed(0)+'k' : '—'}</span></div>
+      <div class="stat"><span class="label">Quota</span><span>${t.quota_audiencia ? t.quota_audiencia+'%' : '—'}</span></div>
+    </div>
+  `).join("");
+  document.getElementById("grid-temporades").innerHTML = html;
+}
+
+// Modals
+async function showPersonatge(slug) {
+  const p = personatgesBySlug[slug] || await fetch(`${BASE}/personatges/${slug}.json`).then(r => r.json());
+  const photo = p.imatge ? `<img class="portrait" src="${p.imatge}" alt="${p.nom}">` : "";
+  const actor = p.actor ? `<p><strong>Actor:</strong> ${p.actor.nom}</p>` : "";
+  const cites = p.cites && p.cites.length ? `<p><strong>Cites:</strong> ${p.cites.length} diàlegs com a primer interlocutor.</p>` : "";
+  const desc = p.descripcio ? `<p>${escapeHtml(p.descripcio)}</p>` : "<p><em>Sense descripció.</em></p>";
+  openModal(`
+    <h2>${p.nom} <button class="close" onclick="closeModal()">×</button></h2>
+    ${photo}
+    ${actor}
+    ${cites}
+    ${desc}
+  `);
+}
+
+async function showEpisode(id) {
+  const e = await fetch(`${BASE}/episodis/${id}.json`).then(r => r.json());
+  const date = e.data_emissio ? `<p><strong>Emissió:</strong> ${e.data_emissio}</p>` : "";
+  const persPills = e.personatges && e.personatges.length
+    ? `<div class="pills">${e.personatges.map(s => `<span class="pill">${personatgesBySlug[s]?.nom || s}</span>`).join('')}</div>` : "";
+  const cites = e.cites && e.cites.length ? `<p><strong>Cites en aquest episodi:</strong> ${e.cites.length}</p>` : "";
+  const sinopsi = e.sinopsi ? `<p>${escapeHtml(e.sinopsi)}</p>` : "<p><em>Sense sinopsi.</em></p>";
+  openModal(`
+    <h2>${e.id} · ${e.titol} <button class="close" onclick="closeModal()">×</button></h2>
+    ${date}
+    ${cites}
+    ${sinopsi}
+    ${persPills ? `<h4>Personatges</h4>${persPills}` : ""}
+  `);
+}
+
+function openModal(html) {
+  document.getElementById("modal-content").innerHTML = html;
+  document.getElementById("modal-bg").classList.add("open");
+}
+
+function closeModal() {
+  document.getElementById("modal-bg").classList.remove("open");
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+// Boot
+loadPersonatges();
+</script>
+
+</body>
+</html>
